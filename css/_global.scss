@@ -1,0 +1,24 @@
+// Colors
+$color-text: #17303E;
+$color-bg-1: #F3ECE1;
+$color-bg-2: #E9FADB;
+$color-bg-3: #E0D3C2;
+$color-btn: #783807;
+$color-btn-action: #6D9200;
+$color-dividers: #DBCDB7;
+$color-white-bg: #FFFFFF;
+$color-add-text: #87745C;
+
+
+@mixin media($value) {
+    @if ($value < 0) {
+        @media screen and (min-width: calc($value * (-1)) + 'px') {
+            @content;
+        }
+
+    } @else {
+        @media screen and (max-width: $value + 'px') {
+            @content;
+        }
+    }
+}
