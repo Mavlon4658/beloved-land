@@ -1189,6 +1189,12 @@ section {
             }
         }
 
+        select {
+            @include media(700) {
+                border-radius: 0 0 10px 10px;
+            }
+        }
+
         &_wrap {
             display: flex;
             align-items: flex-start;

@@ -1149,6 +1149,11 @@ section {
     width: 100%;
   }
 }
+@media screen and (max-width: 700px) {
+  .area .select select {
+    border-radius: 0 0 10px 10px;
+  }
+}
 .area .select_wrap {
   display: flex;
   align-items: flex-start;
