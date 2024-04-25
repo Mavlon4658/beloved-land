@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/header_log.svg" type="image/x-icon">
+    <title>Beloved Land</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <!-- "Подобрать участок" modal -->
+        <div class="modal modal_1">
+            <div class="modal__bg"></div>
+            <form class="modal__content">
+                <div class="modal__head">
+                    <a href="/" class="logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+                    <button class="modal__close" type="button">
+                        <img src="./images/cross-icon.svg" alt="">
+                    </button>
+                </div>
+                <h2 class="text-h2 modal__title">Оставьте Ваши контакты и мы <br> обязательно свяжемся с Вами!</h2>
+                <div class="form_control">
+                    <label for="" class="text-p1">Ваше имя</label>
+                    <input type="text" class="inp" placeholder="Введите Ваше имя">
+                </div>
+                <div class="form_control">
+                    <label for="" class="text-p1">Номер телефона</label>
+                    <input type="text" class="inp" placeholder="Введите номер телефона">
+                </div>
+                <div class="form_control">
+                    <label for="" class="text-p1">Опишите Ваши пожелания</label>
+                    <textarea class="inp" placeholder="Опишите, что ищите"></textarea>
+                </div>
+                <button type="submit" class="btn_green">Отправить</button>
+            </form>
+        </div>
+        <!-- "Подобрать участок" modal end -->
+
+        <!-- "Стать агентом" modal -->
+        <div class="modal modal_2">
+            <div class="modal__bg"></div>
+            <form class="modal__content">
+                <div class="modal__head">
+                    <a href="/" class="logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+                    <button class="modal__close" type="button">
+                        <img src="./images/cross-icon.svg" alt="">
+                    </button>
+                </div>
+                <h2 class="text-h2 modal__title">Оставьте Ваши контакты и мы <br> обязательно свяжемся с Вами!</h2>
+                <div class="form_control">
+                    <label for="" class="text-p1">Ваше имя</label>
+                    <input type="text" class="inp" placeholder="Введите Ваше имя">
+                </div>
+                <div class="form_control">
+                    <label for="" class="text-p1">Номер телефона</label>
+                    <input type="text" class="inp" placeholder="Введите номер телефона">
+                </div>
+                <button type="submit" class="btn_green">Отправить</button>
+            </form>
+        </div>
+        <!-- "Стать агентом" modal end -->
+
+        <!-- "Войти в кабинет агента" modal -->
+        <div class="modal modal_3">
+            <div class="modal__bg"></div>
+            <form class="modal__content">
+                <div class="modal__head">
+                    <a href="/" class="logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+                    <button class="modal__close" type="button">
+                        <img src="./images/cross-icon.svg" alt="">
+                    </button>
+                </div>
+                <h2 class="text-h2 modal__title">Вход в кабинет агента</h2>
+                <div class="form_control">
+                    <label for="" class="text-p1">Логин</label>
+                    <input type="text" class="inp" placeholder="Введите логин">
+                </div>
+                <div class="form_control">
+                    <label for="" class="text-p1">Пароль</label>
+                    <div class="inp_wrap password_wrap">
+                        <input type="password" class="inp" placeholder="Введите пароль">
+                        <button type="button" class="change_type">
+                            <img src="./images/hide_eye.svg" alt="">
+                            <img src="./images/show_eye.svg" alt="">
+                        </button>
+                    </div>
+                    <a href="#">Забыли пароль?</a>
+                </div>
+                <button type="submit" class="btn_green">Отправить</button>
+            </form>
+        </div>
+        <!-- "Войти в кабинет агента" modal end -->
+
+        <!-- "Оставить отзыв" modal -->
+        <div class="modal modal_4">
+            <div class="modal__bg"></div>
+            <form class="modal__content">
+                <div class="modal__head">
+                    <a href="/" class="logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+                    <button class="modal__close" type="button">
+                        <img src="./images/cross-icon.svg" alt="">
+                    </button>
+                </div>
+                <h2 class="text-h2 modal__title">Оставьте Ваши впечатления!</h2>
+                <div class="form_control">
+                    <label for="" class="text-p1">Ваше имя</label>
+                    <input type="text" class="inp" placeholder="Введите Ваше имя">
+                </div>
+                <div class="form_control">
+                    <label for="" class="text-p1">Заголовок  (необязательно)</label>
+                    <input type="tel" class="inp" placeholder="Напишите заголовок">
+                </div>
+                <div class="form_control rate_wrap">
+                    <label for="" class="text-p1">Поставьте оценку</label>
+                    <input type="radio" name="rate" value="1">
+                    <input type="radio" name="rate" value="2">
+                    <input type="radio" name="rate" value="3">
+                    <input type="radio" name="rate" value="4">
+                    <input type="radio" name="rate" value="5">
+                    <div class="stars">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.9995 11.3123L14.9995 11.3123C14.3259 11.8213 14.0445 12.6984 14.2963 13.5043C14.2963 13.5043 14.2963 13.5043 14.2963 13.5044L15.9632 18.8401L11.7057 15.6232C10.9923 15.084 10.0078 15.084 9.29427 15.6232C9.29425 15.6232 9.29424 15.6232 9.29422 15.6232L5.03667 18.8402L6.7037 13.5043C6.95551 12.6985 6.67405 11.8212 6.00043 11.3123L1.59399 7.98269L1.59398 7.98269H6.95831C7.83313 7.98269 8.60643 7.41413 8.86731 6.5791L10.5 1.35327L12.1327 6.57902C12.1327 6.57905 12.1327 6.57908 12.1327 6.57911C12.3936 7.41422 13.167 7.98269 14.0417 7.98269H19.406L19.406 7.98269L14.9995 11.3123Z" stroke="#FFBA52" stroke-width="2"/>
+                        </svg>
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.9995 11.3123L14.9995 11.3123C14.3259 11.8213 14.0445 12.6984 14.2963 13.5043C14.2963 13.5043 14.2963 13.5043 14.2963 13.5044L15.9632 18.8401L11.7057 15.6232C10.9923 15.084 10.0078 15.084 9.29427 15.6232C9.29425 15.6232 9.29424 15.6232 9.29422 15.6232L5.03667 18.8402L6.7037 13.5043C6.95551 12.6985 6.67405 11.8212 6.00043 11.3123L1.59399 7.98269L1.59398 7.98269H6.95831C7.83313 7.98269 8.60643 7.41413 8.86731 6.5791L10.5 1.35327L12.1327 6.57902C12.1327 6.57905 12.1327 6.57908 12.1327 6.57911C12.3936 7.41422 13.167 7.98269 14.0417 7.98269H19.406L19.406 7.98269L14.9995 11.3123Z" stroke="#FFBA52" stroke-width="2"/>
+                        </svg>
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.9995 11.3123L14.9995 11.3123C14.3259 11.8213 14.0445 12.6984 14.2963 13.5043C14.2963 13.5043 14.2963 13.5043 14.2963 13.5044L15.9632 18.8401L11.7057 15.6232C10.9923 15.084 10.0078 15.084 9.29427 15.6232C9.29425 15.6232 9.29424 15.6232 9.29422 15.6232L5.03667 18.8402L6.7037 13.5043C6.95551 12.6985 6.67405 11.8212 6.00043 11.3123L1.59399 7.98269L1.59398 7.98269H6.95831C7.83313 7.98269 8.60643 7.41413 8.86731 6.5791L10.5 1.35327L12.1327 6.57902C12.1327 6.57905 12.1327 6.57908 12.1327 6.57911C12.3936 7.41422 13.167 7.98269 14.0417 7.98269H19.406L19.406 7.98269L14.9995 11.3123Z" stroke="#FFBA52" stroke-width="2"/>
+                        </svg>
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.9995 11.3123L14.9995 11.3123C14.3259 11.8213 14.0445 12.6984 14.2963 13.5043C14.2963 13.5043 14.2963 13.5043 14.2963 13.5044L15.9632 18.8401L11.7057 15.6232C10.9923 15.084 10.0078 15.084 9.29427 15.6232C9.29425 15.6232 9.29424 15.6232 9.29422 15.6232L5.03667 18.8402L6.7037 13.5043C6.95551 12.6985 6.67405 11.8212 6.00043 11.3123L1.59399 7.98269L1.59398 7.98269H6.95831C7.83313 7.98269 8.60643 7.41413 8.86731 6.5791L10.5 1.35327L12.1327 6.57902C12.1327 6.57905 12.1327 6.57908 12.1327 6.57911C12.3936 7.41422 13.167 7.98269 14.0417 7.98269H19.406L19.406 7.98269L14.9995 11.3123Z" stroke="#FFBA52" stroke-width="2"/>
+                        </svg>
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.9995 11.3123L14.9995 11.3123C14.3259 11.8213 14.0445 12.6984 14.2963 13.5043C14.2963 13.5043 14.2963 13.5043 14.2963 13.5044L15.9632 18.8401L11.7057 15.6232C10.9923 15.084 10.0078 15.084 9.29427 15.6232C9.29425 15.6232 9.29424 15.6232 9.29422 15.6232L5.03667 18.8402L6.7037 13.5043C6.95551 12.6985 6.67405 11.8212 6.00043 11.3123L1.59399 7.98269L1.59398 7.98269H6.95831C7.83313 7.98269 8.60643 7.41413 8.86731 6.5791L10.5 1.35327L12.1327 6.57902C12.1327 6.57905 12.1327 6.57908 12.1327 6.57911C12.3936 7.41422 13.167 7.98269 14.0417 7.98269H19.406L19.406 7.98269L14.9995 11.3123Z" stroke="#FFBA52" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form_control">
+                    <label for="" class="text-p1">Отзыв</label>
+                    <textarea class="inp" placeholder="Оставьте Ваш отзыв"></textarea>
+                </div>
+                <button type="submit" class="btn_green">Отправить</button>
+            </form>
+        </div>
+        <!-- "Оставить отзыв" modal end -->
+
+        <!-- "Thanks" modal -->
+        <div class="modal modal_5">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <div class="modal__head">
+                    <a href="/" class="logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+                    <button class="modal__close" type="button">
+                        <img src="./images/cross-icon.svg" alt="">
+                    </button>
+                </div>
+                <h2 class="text-h2 modal__title">Спасибо, в ближайшее время с Вами свяжется наш специалист!</h2>
+            </div>
+        </div>
+        <!-- "Thanks" modal end -->
+
+        <!-- Write -->
+        <div class="write">
+            <span>Пишите:</span>
+            <a href="#">
+                <img src="./images/telegram.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="./images/whatsapp.svg" alt="">
+            </a>
+        </div>
+        <!-- Write end -->
+
+        <!-- Header -->
+        <header class="header">
+            <div class="main_container header__container">
+                <div class="header__left">
+                    <button class="bars">
+                        <img src="./images/bars.svg" alt="">
+                    </button>
+
+                    <a href="#" class="header__logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+
+                    <div class="header__left_in">
+                        <div class="search">
+                            <img src="./images/search.svg" alt="" class="icon">
+                            <input type="text" placeholder="Поиск">
+                        </div>
+
+                        <ul class="header__navs">
+                            <li>
+                                <a href="#">Поселки</a>
+                            </li>
+                            <li>
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#">О компании</a>
+                            </li>
+                            <li>
+                                <a href="#">Hовости</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__contact">
+                    <div class="links">
+                        <a href="mailto:info@любимаяземля.рф">info@любимаяземля.рф</a>
+                        <a href="tel:+7(495) 555-55-55">+7(495) 555-55-55</a>
+                    </div>
+                    <button class="search_btn">
+                        <img src="./images/search.svg" alt="">
+                    </button>
+                    <a href="#" class="icon">
+                        <img src="./images/phone.svg" alt="">
+                    </a>
+                </div>
+                <div class="header__right">
+                    <a href="#" class="btn_green modal_2_open">Стать агентом</a>
+                    <a href="#" class="auth_link modal_3_open">Войти в кабинет агента</a>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Mobile menu -->
+        <div class="mobile_menu">
+            <div class="main_container mobile_menu__container">
+                <div class="mobile_menu__head">
+                    <a href="/" class="logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+                    <button class="mobile_menu__close">
+                        <img src="./images/menu_close.svg" alt="">
+                    </button>
+                </div>
+                <div class="mobile_menu__content">
+                    <ul class="mobile_menu__navs">
+                        <li>
+                            <a href="#" class="text-p1">Поселки</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-p1">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-p1">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-p1">Hовости</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-p1">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="mobile_menu__bottom">
+                        <a href="#" class="btn_green text-btn modal_2_open">Стать агентом</a>
+                        <a href="#" class="auth_link modal_3_open">Войти в кабинет агента</a>
+                    </div>
+                    <ul class="mobile_menu__networks">
+                        <li>
+                            <a href="#">
+                                <img src="./images/menu_phone.svg" alt="">
+                                <span class="text-p1"> 8 (495) 212-18-86</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/menu_mail.svg" alt="">
+                                <span class="text-p1">info@любимаяземля.рф</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/menu_clock.svg" alt="">
+                                <span class="text-p1">Работаем: 09:00 - 20:00</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu end -->
+
+        <main>
+
+            <!-- Breadcrumbs -->
+            <div class="breakcrumbs">
+                <ul class="main_container">
+                    <li>
+                        <a href="/" class="text-p3">Любимая земля</a>
+                    </li>
+                    <li>
+                        <span class="text-p3">/</span>
+                    </li>
+                    <li>
+                        <span class="text-p3 current-page">О компании</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Breadcrumbs end -->
+
+            <!-- Company card -->
+            <section class="company_card">
+                <div class="main_container company_card">
+                    <h2 class="text-h1"><span>выбирают</span> участки в Любимой земле, <br> потому что:</h2>
+                    <p class="text-p1 company_card__description">Мы активно работаем на земельном рынке Московской области уже более десяти лет и предлагаем нашим клиентам оригинальные объекты недвижимости, обладающие оптимальным соотношением цены и качества. Наш коллектив включает в себя опытных профессионалов с многолетним опытом работы в сфере недвижимости Подмосковья, что обеспечивает нашим клиентам высокий уровень экспертизы и профессионализма во всех аспектах нашей работы.</p>
+                    <ul>
+                        <li>
+                            <img src="./images/company_card_icon_1.svg" alt="">
+                            <h3 class="text-h2">Профессионализм</h3>
+                            <p class="text-p1">Наша команда состоит из опытных специалистов, готовых помочь вам в выборе и покупке идеального участка.</p>
+                        </li>
+                        <li>
+                            <img src="./images/company_card_icon_2.svg" alt="">
+                            <h3 class="text-h2">Честность</h3>
+                            <p class="text-p1">Мы ценим доверие каждого клиента, поэтому предоставляем полную информацию о каждом участке, его истории и юридическом статусе.</p>
+                        </li>
+                        <li>
+                            <img src="./images/company_card_icon_3.svg" alt="">
+                            <h3 class="text-h2">Индивидуальный подход</h3>
+                            <p class="text-p1">Мы понимаем, что каждый клиент уникален, поэтому готовы предложить решения, нацеленные на удовлетворение ваших индивидуальных потребностей и пожеланий.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Company card end -->
+
+            <!-- Statistic -->
+            <section class="statistic">
+                <div class="main_container">
+                    <h2 class="text-h1"><span>В цифрах</span> о Любимой земле </h2>
+                    <div class="statistic__content">
+                        <p>
+                            Наша компания специализируется на предоставлении качественных услуг по оформлению сделок с земельными участками под ключ для как физических, так и юридических лиц. Мы обеспечиваем клиентов полным сопровождением на всех этапах сделки, включая профессиональные консультации и юридическое оформление всех необходимых документов. Все земельные активы передаются клиентам в собственность с гарантированной абсолютной юридической чистотой сделок, что обеспечивает им дополнительный уровень уверенности и защиты. <br>
+                            Мы активно работаем на земельном рынке Московской области уже более десяти лет и предлагаем нашим клиентам оригинальные объекты недвижимости, обладающие оптимальным соотношением цены и качества. Наш коллектив включает в себя опытных профессионалов с многолетним опытом работы в сфере недвижимости Подмосковья, что обеспечивает нашим клиентам высокий уровень экспертизы и профессионализма во всех аспектах нашей работы.
+                        </p>
+                        <ul>
+                            <li>
+                                <h2 class="text-h1">10+</h2>
+                                <p class="text-p1">Лет на рынке недвижимости</p>
+                            </li>
+                            <li>
+                                <h2 class="text-h1">12</h2>
+                                <p class="text-p1">Специалистов по подбору участка, которые всегда на связи</p>
+                            </li>
+                            <li>
+                                <h2 class="text-h1">5600+</h2>
+                                <p class="text-p1">Участков доступно</p>
+                            </li>
+                            <li>
+                                <h2 class="text-h1">140+</h2>
+                                <p class="text-p1">Проданных участков</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Statistic end -->
+
+            <!-- People -->
+            <section class="people">
+                <div class="main_container">
+                    <h2 class="text-h1">В компании самое важное — <span>люди</span></h2>
+                    <p class="text-p1 people__description">
+                        Наши сотрудники — это профессионалы своего дела, готовые предоставить нашим клиентам высококачественные услуги и экспертную поддержку на всех этапах сделки. Мы ценим каждого члена нашей команды и стремимся к постоянному профессиональному росту и развитию. <br>
+                        Совместная работа и взаимодействие наших сотрудников позволяют нам эффективно решать самые сложные задачи и достигать поставленных целей. Мы гордимся своей командой и уверены в ее способности предоставлять нашим клиентам самые лучшие решения и сервис в сфере недвижимости Подмосковья.
+                    </p>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/people_1.png" alt="">
+                                <h3 class="text-h2">Дмитрий</h3>
+                                <p class="text-p1">Директор компании</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/people_2.png" alt="">
+                                <h3 class="text-h2">Иван</h3>
+                                <p class="text-p1">Зам директора</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/people_3.png" alt="">
+                                <h3 class="text-h2">Людмила</h3>
+                                <p class="text-p1">Специалист по работе с клиентами</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/people_4.png" alt="">
+                                <h3 class="text-h2">Елизавета</h3>
+                                <p class="text-p1">Специалист по работе с клиентами</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/people_3.png" alt="">
+                                <h3 class="text-h2">Людмила</h3>
+                                <p class="text-p1">Специалист по работе с клиентами</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/people_4.png" alt="">
+                                <h3 class="text-h2">Елизавета</h3>
+                                <p class="text-p1">Специалист по работе с клиентами</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="people__bottom">
+                        <button class="swp_btn_prev">
+                            <img src="./images/swp_btn_prev.svg" alt="">
+                        </button>
+                        <div class="swiper_pagination"></div>
+                        <button class="swp_btn_next">
+                            <img src="./images/swp_btn_next.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- People end -->
+
+            <!-- Write to us -->
+            <section class="write_us write_us__company">
+                <div class="main_container write_us__container active">
+                    <h2 class="text-h1">станьте агентом недвижимости</h2>
+                    <div class="write_us__content">
+                        <img src="./images/write_us__card_3.png" alt="" class="main_img active">
+                        <form action="" class="write_us__form">
+                            <p class="text-p1">Оставьте контакты и наши специалисты свяжутся с Вами!</p>
+                            <div class="form_group">
+                                <div class="form_group__item">
+                                    <label for="" class="text-p1">Ваше имя</label>
+                                    <input type="text" placeholder="Введите Ваше имя" class="inp">
+                                </div>
+                                <div class="form_group__item">
+                                    <label for="" class="text-p1">Номер телефона</label>
+                                    <input type="tel" placeholder="Введите номер телефона" class="inp">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn_green text-btn modal_5_open">Отправить</button>
+                            <p class="text-p3">Вы даете согласие на обработку и хранение информации</p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- Write to us end -->
+
+            <!-- Main descriptions -->
+            <section class="main_descriptions">
+                <div class="main_container">
+                    <ul>
+                        <li>
+                            <p class="text-p1">Выбор участка под строительство загородного дома - это ответственный шаг, который может определить ваше будущее место жительства на долгие годы. При выборе участка необходимо учитывать ряд важных факторов: размер и форма участка, его географическое расположение, инфраструктуру и коммуникации в районе, а также особенности местности и рельефа. Важно также обратить внимание на правовой статус участка и наличие всех необходимых документов.</p>
+                            <p class="text-p1">Выбор участка под строительство загородного дома - это ответственный шаг, который может определить ваше будущее место жительства на долгие годы. При выборе участка необходимо учитывать ряд важных факторов: размер и форма участка, его географическое расположение, инфраструктуру и коммуникации в районе, а также особенности местности и рельефа. Важно также обратить внимание на правовой статус участка и наличие всех необходимых документов.</p>
+                        </li>
+                        <li>
+                            <p class="text-p1">Выбор участка под строительство загородного дома - это ответственный шаг, который может определить ваше будущее место жительства на долгие годы. При выборе участка необходимо учитывать ряд важных факторов: размер и форма участка, его географическое расположение, инфраструктуру и коммуникации в районе, а также особенности местности и рельефа. Важно также обратить внимание на правовой статус участка и наличие всех необходимых документов.</p>
+                            <p class="text-p1">Выбор участка под строительство загородного дома - это ответственный шаг, который может определить ваше будущее место жительства на долгие годы. При выборе участка необходимо учитывать ряд важных факторов: размер и форма участка, его географическое расположение, инфраструктуру и коммуникации в районе, а также особенности местности и рельефа. Важно также обратить внимание на правовой статус участка и наличие всех необходимых документов.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Main descriptions end -->
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="main_container footer__container">
+                <ul class="footer__navs">
+                    <li>
+                        <a href="#" class="text-p1">Поселки</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-p1">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-p1">Стать агентом</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-p1">О компании</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-p1">новости</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-p1">Контакты</a>
+                    </li>
+                </ul>
+                <a href="/" class="footer__logo">
+                    <img src="./images/header_log.svg" alt="">
+                    <span>Любимая <br>земля</span>
+                </a>
+                <ul class="footer__networks">
+                    <li>
+                        <span class="text-p1 title">Контакты:</span>
+                        <a href="#" class="text-p1">info@новоеивановское.рф</a>
+                        <a href="#" class="text-p1">+7(495) 555-55-55</a>
+                    </li>
+                    <li>
+                        <span class="text-p1 title">Режим работы:</span>
+                        <span class="text-p1">Пн-Пт 9:00-19:00</span>
+                        <span class="text-p1">Сб, Вс  12:00-18:00</span>
+                    </li>
+                    <li>
+                        <span class="text-p1 title">Адрес:</span>
+                        <span class="text-p1">Москва, ул </span>
+                        <span class="text-p1">Москва, ул </span>
+                    </li>
+                    <li>
+                        <span class="text-p1 title">ООО “Любимая земля”</span>
+                        <span class="text-p1">ИНН 96584849</span>
+                        <span class="text-p1">ОГРН: 1298382827</span>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+
+    <!-- Yandex map -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
+    <script src="./js/map.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

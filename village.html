@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/header_log.svg" type="image/x-icon">
+    <title>Beloved Land</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <!-- "Подобрать участок" modal -->
+        <div class="modal modal_1">
+            <div class="modal__bg"></div>
+            <form class="modal__content">
+                <div class="modal__head">
+                    <a href="/" class="logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+                    <button class="modal__close" type="button">
+                        <img src="./images/cross-icon.svg" alt="">
+                    </button>
+                </div>
+                <h2 class="text-h2 modal__title">Оставьте Ваши контакты и мы <br> обязательно свяжемся с Вами!</h2>
+                <div class="form_control">
+                    <label for="" class="text-p1">Ваше имя</label>
+                    <input type="text" class="inp" placeholder="Введите Ваше имя">
+                </div>
+                <div class="form_control">
+                    <label for="" class="text-p1">Номер телефона</label>
+                    <input type="text" class="inp" placeholder="Введите номер телефона">
+                </div>
+                <div class="form_control">
+                    <label for="" class="text-p1">Опишите Ваши пожелания</label>
+                    <textarea class="inp" placeholder="Опишите, что ищите"></textarea>
+                </div>
+                <button type="submit" class="btn_green">Отправить</button>
+            </form>
+        </div>
+        <!-- "Подобрать участок" modal end -->
+
+        <!-- "Стать агентом" modal -->
+        <div class="modal modal_2">
+            <div class="modal__bg"></div>
+            <form class="modal__content">
+                <div class="modal__head">
+                    <a href="/" class="logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+                    <button class="modal__close" type="button">
+                        <img src="./images/cross-icon.svg" alt="">
+                    </button>
+                </div>
+                <h2 class="text-h2 modal__title">Оставьте Ваши контакты и мы <br> обязательно свяжемся с Вами!</h2>
+                <div class="form_control">
+                    <label for="" class="text-p1">Ваше имя</label>
+                    <input type="text" class="inp" placeholder="Введите Ваше имя">
+                </div>
+                <div class="form_control">
+                    <label for="" class="text-p1">Номер телефона</label>
+                    <input type="text" class="inp" placeholder="Введите номер телефона">
+                </div>
+                <button type="submit" class="btn_green">Отправить</button>
+            </form>
+        </div>
+        <!-- "Стать агентом" modal end -->
+
+        <!-- "Войти в кабинет агента" modal -->
+        <div class="modal modal_3">
+            <div class="modal__bg"></div>
+            <form class="modal__content">
+                <div class="modal__head">
+                    <a href="/" class="logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+                    <button class="modal__close" type="button">
+                        <img src="./images/cross-icon.svg" alt="">
+                    </button>
+                </div>
+                <h2 class="text-h2 modal__title">Вход в кабинет агента</h2>
+                <div class="form_control">
+                    <label for="" class="text-p1">Логин</label>
+                    <input type="text" class="inp" placeholder="Введите логин">
+                </div>
+                <div class="form_control">
+                    <label for="" class="text-p1">Пароль</label>
+                    <div class="inp_wrap password_wrap">
+                        <input type="password" class="inp" placeholder="Введите пароль">
+                        <button type="button" class="change_type">
+                            <img src="./images/hide_eye.svg" alt="">
+                            <img src="./images/show_eye.svg" alt="">
+                        </button>
+                    </div>
+                    <a href="#">Забыли пароль?</a>
+                </div>
+                <button type="submit" class="btn_green">Отправить</button>
+            </form>
+        </div>
+        <!-- "Войти в кабинет агента" modal end -->
+
+        <!-- "Оставить отзыв" modal -->
+        <div class="modal modal_4">
+            <div class="modal__bg"></div>
+            <form class="modal__content">
+                <div class="modal__head">
+                    <a href="/" class="logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+                    <button class="modal__close" type="button">
+                        <img src="./images/cross-icon.svg" alt="">
+                    </button>
+                </div>
+                <h2 class="text-h2 modal__title">Оставьте Ваши впечатления!</h2>
+                <div class="form_control">
+                    <label for="" class="text-p1">Ваше имя</label>
+                    <input type="text" class="inp" placeholder="Введите Ваше имя">
+                </div>
+                <div class="form_control">
+                    <label for="" class="text-p1">Заголовок  (необязательно)</label>
+                    <input type="tel" class="inp" placeholder="Напишите заголовок">
+                </div>
+                <div class="form_control rate_wrap">
+                    <label for="" class="text-p1">Поставьте оценку</label>
+                    <input type="radio" name="rate" value="1">
+                    <input type="radio" name="rate" value="2">
+                    <input type="radio" name="rate" value="3">
+                    <input type="radio" name="rate" value="4">
+                    <input type="radio" name="rate" value="5">
+                    <div class="stars">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.9995 11.3123L14.9995 11.3123C14.3259 11.8213 14.0445 12.6984 14.2963 13.5043C14.2963 13.5043 14.2963 13.5043 14.2963 13.5044L15.9632 18.8401L11.7057 15.6232C10.9923 15.084 10.0078 15.084 9.29427 15.6232C9.29425 15.6232 9.29424 15.6232 9.29422 15.6232L5.03667 18.8402L6.7037 13.5043C6.95551 12.6985 6.67405 11.8212 6.00043 11.3123L1.59399 7.98269L1.59398 7.98269H6.95831C7.83313 7.98269 8.60643 7.41413 8.86731 6.5791L10.5 1.35327L12.1327 6.57902C12.1327 6.57905 12.1327 6.57908 12.1327 6.57911C12.3936 7.41422 13.167 7.98269 14.0417 7.98269H19.406L19.406 7.98269L14.9995 11.3123Z" stroke="#FFBA52" stroke-width="2"/>
+                        </svg>
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.9995 11.3123L14.9995 11.3123C14.3259 11.8213 14.0445 12.6984 14.2963 13.5043C14.2963 13.5043 14.2963 13.5043 14.2963 13.5044L15.9632 18.8401L11.7057 15.6232C10.9923 15.084 10.0078 15.084 9.29427 15.6232C9.29425 15.6232 9.29424 15.6232 9.29422 15.6232L5.03667 18.8402L6.7037 13.5043C6.95551 12.6985 6.67405 11.8212 6.00043 11.3123L1.59399 7.98269L1.59398 7.98269H6.95831C7.83313 7.98269 8.60643 7.41413 8.86731 6.5791L10.5 1.35327L12.1327 6.57902C12.1327 6.57905 12.1327 6.57908 12.1327 6.57911C12.3936 7.41422 13.167 7.98269 14.0417 7.98269H19.406L19.406 7.98269L14.9995 11.3123Z" stroke="#FFBA52" stroke-width="2"/>
+                        </svg>
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.9995 11.3123L14.9995 11.3123C14.3259 11.8213 14.0445 12.6984 14.2963 13.5043C14.2963 13.5043 14.2963 13.5043 14.2963 13.5044L15.9632 18.8401L11.7057 15.6232C10.9923 15.084 10.0078 15.084 9.29427 15.6232C9.29425 15.6232 9.29424 15.6232 9.29422 15.6232L5.03667 18.8402L6.7037 13.5043C6.95551 12.6985 6.67405 11.8212 6.00043 11.3123L1.59399 7.98269L1.59398 7.98269H6.95831C7.83313 7.98269 8.60643 7.41413 8.86731 6.5791L10.5 1.35327L12.1327 6.57902C12.1327 6.57905 12.1327 6.57908 12.1327 6.57911C12.3936 7.41422 13.167 7.98269 14.0417 7.98269H19.406L19.406 7.98269L14.9995 11.3123Z" stroke="#FFBA52" stroke-width="2"/>
+                        </svg>
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.9995 11.3123L14.9995 11.3123C14.3259 11.8213 14.0445 12.6984 14.2963 13.5043C14.2963 13.5043 14.2963 13.5043 14.2963 13.5044L15.9632 18.8401L11.7057 15.6232C10.9923 15.084 10.0078 15.084 9.29427 15.6232C9.29425 15.6232 9.29424 15.6232 9.29422 15.6232L5.03667 18.8402L6.7037 13.5043C6.95551 12.6985 6.67405 11.8212 6.00043 11.3123L1.59399 7.98269L1.59398 7.98269H6.95831C7.83313 7.98269 8.60643 7.41413 8.86731 6.5791L10.5 1.35327L12.1327 6.57902C12.1327 6.57905 12.1327 6.57908 12.1327 6.57911C12.3936 7.41422 13.167 7.98269 14.0417 7.98269H19.406L19.406 7.98269L14.9995 11.3123Z" stroke="#FFBA52" stroke-width="2"/>
+                        </svg>
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.9995 11.3123L14.9995 11.3123C14.3259 11.8213 14.0445 12.6984 14.2963 13.5043C14.2963 13.5043 14.2963 13.5043 14.2963 13.5044L15.9632 18.8401L11.7057 15.6232C10.9923 15.084 10.0078 15.084 9.29427 15.6232C9.29425 15.6232 9.29424 15.6232 9.29422 15.6232L5.03667 18.8402L6.7037 13.5043C6.95551 12.6985 6.67405 11.8212 6.00043 11.3123L1.59399 7.98269L1.59398 7.98269H6.95831C7.83313 7.98269 8.60643 7.41413 8.86731 6.5791L10.5 1.35327L12.1327 6.57902C12.1327 6.57905 12.1327 6.57908 12.1327 6.57911C12.3936 7.41422 13.167 7.98269 14.0417 7.98269H19.406L19.406 7.98269L14.9995 11.3123Z" stroke="#FFBA52" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form_control">
+                    <label for="" class="text-p1">Отзыв</label>
+                    <textarea class="inp" placeholder="Оставьте Ваш отзыв"></textarea>
+                </div>
+                <button type="submit" class="btn_green">Отправить</button>
+            </form>
+        </div>
+        <!-- "Оставить отзыв" modal end -->
+
+        <!-- "Thanks" modal -->
+        <div class="modal modal_5">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <div class="modal__head">
+                    <a href="/" class="logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+                    <button class="modal__close" type="button">
+                        <img src="./images/cross-icon.svg" alt="">
+                    </button>
+                </div>
+                <h2 class="text-h2 modal__title">Спасибо, в ближайшее время с Вами свяжется наш специалист!</h2>
+            </div>
+        </div>
+        <!-- "Thanks" modal end -->
+
+        <!-- Write -->
+        <div class="write">
+            <span>Пишите:</span>
+            <a href="#">
+                <img src="./images/telegram.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="./images/whatsapp.svg" alt="">
+            </a>
+        </div>
+        <!-- Write end -->
+
+        <!-- Header -->
+        <header class="header">
+            <div class="main_container header__container">
+                <div class="header__left">
+                    <button class="bars">
+                        <img src="./images/bars.svg" alt="">
+                    </button>
+
+                    <a href="#" class="header__logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+
+                    <div class="header__left_in">
+                        <div class="search">
+                            <img src="./images/search.svg" alt="" class="icon">
+                            <input type="text" placeholder="Поиск">
+                        </div>
+
+                        <ul class="header__navs">
+                            <li>
+                                <a href="#">Поселки</a>
+                            </li>
+                            <li>
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#">О компании</a>
+                            </li>
+                            <li>
+                                <a href="#">Hовости</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__contact">
+                    <div class="links">
+                        <a href="mailto:info@любимаяземля.рф">info@любимаяземля.рф</a>
+                        <a href="tel:+7(495) 555-55-55">+7(495) 555-55-55</a>
+                    </div>
+                    <button class="search_btn">
+                        <img src="./images/search.svg" alt="">
+                    </button>
+                    <a href="#" class="icon">
+                        <img src="./images/phone.svg" alt="">
+                    </a>
+                </div>
+                <div class="header__right">
+                    <a href="#" class="btn_green modal_2_open">Стать агентом</a>
+                    <a href="#" class="auth_link modal_3_open">Войти в кабинет агента</a>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Mobile menu -->
+        <div class="mobile_menu">
+            <div class="main_container mobile_menu__container">
+                <div class="mobile_menu__head">
+                    <a href="/" class="logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+                    <button class="mobile_menu__close">
+                        <img src="./images/menu_close.svg" alt="">
+                    </button>
+                </div>
+                <div class="mobile_menu__content">
+                    <ul class="mobile_menu__navs">
+                        <li>
+                            <a href="#" class="text-p1">Поселки</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-p1">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-p1">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-p1">Hовости</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-p1">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="mobile_menu__bottom">
+                        <a href="#" class="btn_green text-btn modal_2_open">Стать агентом</a>
+                        <a href="#" class="auth_link modal_3_open">Войти в кабинет агента</a>
+                    </div>
+                    <ul class="mobile_menu__networks">
+                        <li>
+                            <a href="#">
+                                <img src="./images/menu_phone.svg" alt="">
+                                <span class="text-p1"> 8 (495) 212-18-86</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/menu_mail.svg" alt="">
+                                <span class="text-p1">info@любимаяземля.рф</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/menu_clock.svg" alt="">
+                                <span class="text-p1">Работаем: 09:00 - 20:00</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu end -->
+
+        <main>
+
+            <!-- Breadcrumbs -->
+            <div class="breakcrumbs">
+                <ul class="main_container">
+                    <li>
+                        <a href="/" class="text-p3">Любимая земля</a>
+                    </li>
+                    <li>
+                        <span class="text-p3">/</span>
+                    </li>
+                    <li>
+                        <span class="text-p3 current-page">Поселки</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Breadcrumbs end -->
+
+            <!-- Excellent Location -->
+            <section class="excl_loc village">
+                <div class="main_container">
+                    <h2 class="text-h1"><span>выгодные</span> участки Подмосковья <br> в отличных локациях:</h2>
+                    <div class="form_group">
+                        
+                        <div class="select">
+                            <label class="text-p1" for="">Посёлок:</label>
+                            <select class="text-p1" name="">
+                                <option value="0" selected>Все</option>
+                                <option value="1">select-1</option>
+                                <option value="2">select-2</option>
+                                <option value="3">select-3</option>
+                                <option value="4">select-4</option>
+                                <option value="5">select-5</option>
+                            </select>
+                        </div>
+
+                        <div class="select">
+                            <label class="text-p1" for="">Площадь:</label>
+                            <select class="text-p1" name="">
+                                <option value="" hidden selected>Выберите</option>
+                                <option value="1">select-1</option>
+                                <option value="2">select-2</option>
+                                <option value="3">select-3</option>
+                                <option value="4">select-4</option>
+                                <option value="5">select-5</option>
+                            </select>
+                        </div>
+
+                        <div class="select">
+                            <label class="text-p1" for="">Цена:</label>
+                            <select class="text-p1" name="">
+                                <option value="" hidden selected>Выберите</option>
+                                <option value="1">select-1</option>
+                                <option value="2">select-2</option>
+                                <option value="3">select-3</option>
+                                <option value="4">select-4</option>
+                                <option value="5">select-5</option>
+                            </select>
+                        </div>
+
+                        <div class="select">
+                            <label class="text-p1" for="">
+                                <img src="./images/bars-brown.svg" alt="">
+                                <span>Список</span>
+                            </label>
+                            <div class="input">
+                                <img src="./images/mark.svg" alt="">
+                                <input type="text" class="text-p1" value="на Карте">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <ul class="excl_loc__card">
+                        
+                        <li class="excl_loc__card_item">
+                            <div class="card_head">
+                                <div class="card_head__content">
+                                    <div class="card_head__left">
+                                        <h3 class="text-h2">Участок 35 в Агарино</h3>
+                                        <p class="text-p1">785 м2</p>
+                                    </div>
+                                    <div class="card_head__right">
+                                        <img src="./images/excl_loc_logo_1.svg" alt="">
+                                        <span>Агарино</span>
+                                    </div>
+                                </div>
+                                <p class="text-p1 card_description">Участок в поселке Агарино в Домодедовском районе. <br>Расположен рядом с хвойным лесом и рекой Рожайкой в 6 минутах от Каширского шоссе.</p>
+                            </div>
+
+                            <div class="card_body__wrap">
+                                <div class="card_slider">
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./images/excl_loc_swp_1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./images/excl_loc_swp_2.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./images/excl_loc_swp_3.png" alt="">
+                                            </div>
+                                        </div>
+    
+                                        <div class="swiper_btn">
+                                            <button class="swiper_btn_prev">
+                                                <img src="./images/swp_btn_prev_2.svg" alt="">
+                                            </button>
+                                            <button class="swiper_btn_next">
+                                                <img src="./images/swp_btn_next_2.svg" alt="">
+                                            </button>
+                                        </div>
+            
+                                        <div class="swiper_pagination"></div>
+                                    </div>
+                                </div>
+    
+                                <ul class="card_body">
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_1.svg" alt="">
+                                        <p class="text-p1">Рядом леса и речки!</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_2.svg" alt="">
+                                        <p class="text-p1">Вся нужная инфраструктура</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_3.svg" alt="">
+                                        <p class="text-p1">В поселках уже проведена газификация</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_4.svg" alt="">
+                                        <p class="text-p1">Выгодные инвестиции</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="card_price text-p1">
+                                296 400 ₽
+                                <span>57 000 ₽/сотка</span>
+                            </div>
+
+                            <div class="card_foot">
+                                <a href="#" class="btn_brown_border text-btn">Подробнее</a>
+                                <a href="#" class="btn_brown text-btn">ЗАписаться на просмотр</a>
+                            </div>
+                        </li>
+
+                        <li class="excl_loc__card_item">
+                            <div class="card_head">
+                                <div class="card_head__content">
+                                    <div class="card_head__left">
+                                        <h3 class="text-h2">Участок 35 в Агарино</h3>
+                                        <p class="text-p1">785 м2</p>
+                                    </div>
+                                    <div class="card_head__right">
+                                        <img src="./images/excl_loc_logo_1.svg" alt="">
+                                        <span>Агарино</span>
+                                    </div>
+                                </div>
+                                <p class="text-p1 card_description">Участок в поселке Агарино в Домодедовском районе. <br>Расположен рядом с хвойным лесом и рекой Рожайкой в 6 минутах от Каширского шоссе.</p>
+                            </div>
+
+                            <div class="card_body__wrap">
+                                <div class="card_slider">
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./images/excl_loc_swp_1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./images/excl_loc_swp_2.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./images/excl_loc_swp_3.png" alt="">
+                                            </div>
+                                        </div>
+    
+                                        <div class="swiper_btn">
+                                            <button class="swiper_btn_prev">
+                                                <img src="./images/swp_btn_prev_2.svg" alt="">
+                                            </button>
+                                            <button class="swiper_btn_next">
+                                                <img src="./images/swp_btn_next_2.svg" alt="">
+                                            </button>
+                                        </div>
+            
+                                        <div class="swiper_pagination"></div>
+                                    </div>
+                                </div>
+    
+                                <ul class="card_body">
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_1.svg" alt="">
+                                        <p class="text-p1">Рядом леса и речки!</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_2.svg" alt="">
+                                        <p class="text-p1">Вся нужная инфраструктура</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_3.svg" alt="">
+                                        <p class="text-p1">В поселках уже проведена газификация</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_4.svg" alt="">
+                                        <p class="text-p1">Выгодные инвестиции</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="card_price text-p1">
+                                296 400 ₽
+                                <span>57 000 ₽/сотка</span>
+                            </div>
+
+                            <div class="card_foot">
+                                <a href="#" class="btn_brown_border text-btn">Подробнее</a>
+                                <a href="#" class="btn_brown text-btn">ЗАписаться на просмотр</a>
+                            </div>
+                        </li>
+
+                        <li class="excl_loc__card_item">
+                            <div class="card_head">
+                                <div class="card_head__content">
+                                    <div class="card_head__left">
+                                        <h3 class="text-h2">Участок 35 в Агарино</h3>
+                                        <p class="text-p1">785 м2</p>
+                                    </div>
+                                    <div class="card_head__right">
+                                        <img src="./images/excl_loc_logo_1.svg" alt="">
+                                        <span>Агарино</span>
+                                    </div>
+                                </div>
+                                <p class="text-p1 card_description">Участок в поселке Агарино в Домодедовском районе. <br>Расположен рядом с хвойным лесом и рекой Рожайкой в 6 минутах от Каширского шоссе.</p>
+                            </div>
+
+                            <div class="card_body__wrap">
+                                <div class="card_slider">
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./images/excl_loc_swp_1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./images/excl_loc_swp_2.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./images/excl_loc_swp_3.png" alt="">
+                                            </div>
+                                        </div>
+    
+                                        <div class="swiper_btn">
+                                            <button class="swiper_btn_prev">
+                                                <img src="./images/swp_btn_prev_2.svg" alt="">
+                                            </button>
+                                            <button class="swiper_btn_next">
+                                                <img src="./images/swp_btn_next_2.svg" alt="">
+                                            </button>
+                                        </div>
+            
+                                        <div class="swiper_pagination"></div>
+                                    </div>
+                                </div>
+    
+                                <ul class="card_body">
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_1.svg" alt="">
+                                        <p class="text-p1">Рядом леса и речки!</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_2.svg" alt="">
+                                        <p class="text-p1">Вся нужная инфраструктура</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_3.svg" alt="">
+                                        <p class="text-p1">В поселках уже проведена газификация</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_4.svg" alt="">
+                                        <p class="text-p1">Выгодные инвестиции</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="card_price text-p1">
+                                296 400 ₽
+                                <span>57 000 ₽/сотка</span>
+                            </div>
+
+                            <div class="card_foot">
+                                <a href="#" class="btn_brown_border text-btn">Подробнее</a>
+                                <a href="#" class="btn_brown text-btn">ЗАписаться на просмотр</a>
+                            </div>
+                        </li>
+
+                        <li class="excl_loc__card_item">
+                            <div class="card_head">
+                                <div class="card_head__content">
+                                    <div class="card_head__left">
+                                        <h3 class="text-h2">Участок 35 в Агарино</h3>
+                                        <p class="text-p1">785 м2</p>
+                                    </div>
+                                    <div class="card_head__right">
+                                        <img src="./images/excl_loc_logo_1.svg" alt="">
+                                        <span>Агарино</span>
+                                    </div>
+                                </div>
+                                <p class="text-p1 card_description">Участок в поселке Агарино в Домодедовском районе. <br>Расположен рядом с хвойным лесом и рекой Рожайкой в 6 минутах от Каширского шоссе.</p>
+                            </div>
+
+                            <div class="card_body__wrap">
+                                <div class="card_slider">
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./images/excl_loc_swp_1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./images/excl_loc_swp_2.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./images/excl_loc_swp_3.png" alt="">
+                                            </div>
+                                        </div>
+    
+                                        <div class="swiper_btn">
+                                            <button class="swiper_btn_prev">
+                                                <img src="./images/swp_btn_prev_2.svg" alt="">
+                                            </button>
+                                            <button class="swiper_btn_next">
+                                                <img src="./images/swp_btn_next_2.svg" alt="">
+                                            </button>
+                                        </div>
+            
+                                        <div class="swiper_pagination"></div>
+                                    </div>
+                                </div>
+    
+                                <ul class="card_body">
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_1.svg" alt="">
+                                        <p class="text-p1">Рядом леса и речки!</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_2.svg" alt="">
+                                        <p class="text-p1">Вся нужная инфраструктура</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_3.svg" alt="">
+                                        <p class="text-p1">В поселках уже проведена газификация</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_4.svg" alt="">
+                                        <p class="text-p1">Выгодные инвестиции</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="card_price text-p1">
+                                296 400 ₽
+                                <span>57 000 ₽/сотка</span>
+                            </div>
+
+                            <div class="card_foot">
+                                <a href="#" class="btn_brown_border text-btn">Подробнее</a>
+                                <a href="#" class="btn_brown text-btn">ЗАписаться на просмотр</a>
+                            </div>
+                        </li>
+
+                        <li class="excl_loc__card_item">
+                            <div class="card_head">
+                                <div class="card_head__content">
+                                    <div class="card_head__left">
+                                        <h3 class="text-h2">Участок 35 в Агарино</h3>
+                                        <p class="text-p1">785 м2</p>
+                                    </div>
+                                    <div class="card_head__right">
+                                        <img src="./images/excl_loc_logo_1.svg" alt="">
+                                        <span>Агарино</span>
+                                    </div>
+                                </div>
+                                <p class="text-p1 card_description">Участок в поселке Агарино в Домодедовском районе. <br>Расположен рядом с хвойным лесом и рекой Рожайкой в 6 минутах от Каширского шоссе.</p>
+                            </div>
+
+                            <div class="card_body__wrap">
+                                <div class="card_slider">
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./images/excl_loc_swp_1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./images/excl_loc_swp_2.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./images/excl_loc_swp_3.png" alt="">
+                                            </div>
+                                        </div>
+    
+                                        <div class="swiper_btn">
+                                            <button class="swiper_btn_prev">
+                                                <img src="./images/swp_btn_prev_2.svg" alt="">
+                                            </button>
+                                            <button class="swiper_btn_next">
+                                                <img src="./images/swp_btn_next_2.svg" alt="">
+                                            </button>
+                                        </div>
+            
+                                        <div class="swiper_pagination"></div>
+                                    </div>
+                                </div>
+    
+                                <ul class="card_body">
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_1.svg" alt="">
+                                        <p class="text-p1">Рядом леса и речки!</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_2.svg" alt="">
+                                        <p class="text-p1">Вся нужная инфраструктура</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_3.svg" alt="">
+                                        <p class="text-p1">В поселках уже проведена газификация</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_4.svg" alt="">
+                                        <p class="text-p1">Выгодные инвестиции</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="card_price text-p1">
+                                296 400 ₽
+                                <span>57 000 ₽/сотка</span>
+                            </div>
+
+                            <div class="card_foot">
+                                <a href="#" class="btn_brown_border text-btn">Подробнее</a>
+                                <a href="#" class="btn_brown text-btn">ЗАписаться на просмотр</a>
+                            </div>
+                        </li>
+
+                        <li class="excl_loc__card_item">
+                            <div class="card_head">
+                                <div class="card_head__content">
+                                    <div class="card_head__left">
+                                        <h3 class="text-h2">Участок 35 в Агарино</h3>
+                                        <p class="text-p1">785 м2</p>
+                                    </div>
+                                    <div class="card_head__right">
+                                        <img src="./images/excl_loc_logo_1.svg" alt="">
+                                        <span>Агарино</span>
+                                    </div>
+                                </div>
+                                <p class="text-p1 card_description">Участок в поселке Агарино в Домодедовском районе. <br>Расположен рядом с хвойным лесом и рекой Рожайкой в 6 минутах от Каширского шоссе.</p>
+                            </div>
+
+                            <div class="card_body__wrap">
+                                <div class="card_slider">
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./images/excl_loc_swp_1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./images/excl_loc_swp_2.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./images/excl_loc_swp_3.png" alt="">
+                                            </div>
+                                        </div>
+    
+                                        <div class="swiper_btn">
+                                            <button class="swiper_btn_prev">
+                                                <img src="./images/swp_btn_prev_2.svg" alt="">
+                                            </button>
+                                            <button class="swiper_btn_next">
+                                                <img src="./images/swp_btn_next_2.svg" alt="">
+                                            </button>
+                                        </div>
+            
+                                        <div class="swiper_pagination"></div>
+                                    </div>
+                                </div>
+    
+                                <ul class="card_body">
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_1.svg" alt="">
+                                        <p class="text-p1">Рядом леса и речки!</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_2.svg" alt="">
+                                        <p class="text-p1">Вся нужная инфраструктура</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_3.svg" alt="">
+                                        <p class="text-p1">В поселках уже проведена газификация</p>
+                                    </li>
+                                    <li>
+                                        <img src="./images/excl_loc_card_boyd_icon_4.svg" alt="">
+                                        <p class="text-p1">Выгодные инвестиции</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="card_price text-p1">
+                                296 400 ₽
+                                <span>57 000 ₽/сотка</span>
+                            </div>
+
+                            <div class="card_foot">
+                                <a href="#" class="btn_brown_border text-btn">Подробнее</a>
+                                <a href="#" class="btn_brown text-btn">ЗАписаться на просмотр</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                    
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="text-p1 disabled">
+                            <span>Предыдущая</span>
+                            <img src="./images/pagenation_btn_left.svg" alt="">
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="#" class="active text-p1">1</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-p1">2</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-p1">3</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-p1">4</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-p1">5</a>
+                            </li>
+                            <li class="dots">
+                                <span class="text-p1">...</span>
+                            </li>
+                            <li>
+                                <a href="#" class="text-p1">6</a>
+                            </li>
+                        </ul>
+                        <button class="text-p1">
+                            <span>Следующая</span>
+                            <img src="./images/pagenation_btn_right.svg" alt="">
+                        </button>
+                    </div>
+                    <!-- Pagination end -->
+                </div>
+            </section>
+            <!-- Excellent Location end -->
+
+            <!-- Life -->
+            <section class="life">
+                <div class="main_container">
+                    <h2 class="text-h1"><span>Готовность</span> поселков для жизни</h2>
+                    <div class="swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="degree">100%</div>
+                                <h3 class="text-h2">Дороги</h3>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="degree">100%</div>
+                                <h3 class="text-h2">Газификация</h3>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="degree">100%</div>
+                                <h3 class="text-h2">Водоснабжение</h3>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="degree">100%</div>
+                                <h3 class="text-h2">Электрификация</h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="life__bottom">
+                        <button class="swp_btn_prev">
+                            <img src="./images/swp_btn_prev.svg" alt="">
+                        </button>
+                        <div class="swiper_pagination"></div>
+                        <button class="swp_btn_next">
+                            <img src="./images/swp_btn_next.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Life end -->
+
+            <!-- Write to us -->
+            <section class="write_us">
+                <div class="main_container write_us__container">
+                    <h2 class="text-h1">Не нашли Участок? Напишите нам!</h2>
+                    <div class="write_us__content">
+                        <img src="./images/write_us__card.png" alt="" class="main_img">
+                        <form action="" class="write_us__form">
+                            <p class="text-p1">Наши специалисты свяжутся с Вами и помогут выбрать участок по Всем вашим критериям!</p>
+                            <div class="form_group">
+                                <div class="form_group__item">
+                                    <label for="" class="text-p1">Ваше имя</label>
+                                    <input type="text" placeholder="Введите Ваше имя" class="inp">
+                                </div>
+                                <div class="form_group__item">
+                                    <label for="" class="text-p1">Номер телефона</label>
+                                    <input type="tel" placeholder="Введите номер телефона" class="inp">
+                                </div>
+                                <div class="form_group__item">
+                                    <label for="" class="text-p1">Опишите Ваши пожелания</label>
+                                    <textarea name="" class="inp" placeholder="Опишите, что ищите"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn_green text-btn modal_5_open">Отправить</button>
+                            <p class="text-p3">Вы даете согласие на обработку и хранение информации</p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- Write to us end -->
+
+            <!-- Company card -->
+            <section class="company_card receive">
+                <div class="main_container company_card">
+                    <h2 class="text-h1">наши клиенты <span>получают</span></h2>
+                    <ul>
+                        <li>
+                            <img src="./images/receive_icon_1.svg" alt="">
+                            <h3 class="text-h2">Поддержка на всех этапах строительства</h3>
+                        </li>
+                        <li>
+                            <img src="./images/receive_icon_2.svg" alt="">
+                            <h3 class="text-h2">Возможность бесплатной консультации архитектора</h3>
+                        </li>
+                        <li>
+                            <img src="./images/receive_icon_3.png" alt="">
+                            <h3 class="text-h2">Специальные предложения <br> для клиентов.</h3>
+                        </li>
+                    </ul>
+                    <p class="description text-p1">
+                        Выбор участка под строительство загородного дома - это ответственный шаг, который может определить ваше будущее место жительства на долгие годы. При выборе участка необходимо учитывать ряд важных факторов: размер и форма участка, его географическое расположение, инфраструктуру и коммуникации в районе, а также особенности местности и рельефа. Важно также обратить внимание на правовой статус участка и наличие всех необходимых документов. <br>
+                        Выбор участка под строительство загородного дома - это ответственный шаг, который может определить ваше будущее место жительства на долгие годы. При выборе участка необходимо учитывать ряд важных факторов: размер и форма участка, его географическое расположение, инфраструктуру и коммуникации в районе, а также особенности местности и рельефа. Важно также обратить внимание на правовой статус участка и наличие всех необходимых документов.
+                    </p>
+                </div>
+            </section>
+            <!-- Company card end -->
+
+            <!-- Review -->
+            <section class="review">
+                <div class="main_container">
+                    <h2 class="text-h1"><span>Отзывы</span> наших покупателей</h2>
+                    <p class="text-p1">Тех, кто нашел свой любимый участок</p>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="review_card">
+                                    <div class="review_card__content">
+                                        <div class="review_card__head">
+                                            <img src="./images/user_1.png" alt="" class="logo">
+                                            <div class="text">
+                                                <h4 class="text-p1">Алина А</h4>
+                                                <p class="text-p3">12 марта 2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="review_card__body">
+                                            <span class="text-p1">Супер!</span>
+                                            <p class="text-p1">Живем уже год на своем любимом участке! Очень нравится расположение!</p>
+                                        </div>
+                                    </div>
+                                    <div class="review_card__foot">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="review_card">
+                                    <div class="review_card__content">
+                                        <div class="review_card__head">
+                                            <img src="./images/user_2.png" alt="" class="logo">
+                                            <div class="text">
+                                                <h4 class="text-p1">Виктор </h4>
+                                                <p class="text-p3">12 марта 2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="review_card__body">
+                                            <span class="text-p1">Отлично!</span>
+                                            <p class="text-p1">Очень понравился подход к клиенту, все сделали быстро</p>
+                                        </div>
+                                    </div>
+                                    <div class="review_card__foot">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="review_card">
+                                    <div class="review_card__content">
+                                        <div class="review_card__head">
+                                            <img src="./images/user_3.png" alt="" class="logo">
+                                            <div class="text">
+                                                <h4 class="text-p1">Михаил</h4>
+                                                <p class="text-p3">12 марта 2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="review_card__body">
+                                            <span class="text-p1">-</span>
+                                            <p class="text-p1">Локация супер! Недалеко от Москвы, и при этом тихо и спокойно</p>
+                                        </div>
+                                    </div>
+                                    <div class="review_card__foot">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="review_card">
+                                    <div class="review_card__content">
+                                        <div class="review_card__head">
+                                            <img src="./images/user_4.png" alt="" class="logo">
+                                            <div class="text">
+                                                <h4 class="text-p1">Инга</h4>
+                                                <p class="text-p3">12 марта 2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="review_card__body">
+                                            <span class="text-p1">Советую всем!</span>
+                                            <p class="text-p1">Если вы как и я впервые покупаете участок и не знаете с чего начать, тогда Любимая земля это хороший выбор!</p>
+                                        </div>
+                                    </div>
+                                    <div class="review_card__foot">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="review_card">
+                                    <div class="review_card__content">
+                                        <div class="review_card__head">
+                                            <img src="./images/user_3.png" alt="" class="logo">
+                                            <div class="text">
+                                                <h4 class="text-p1">Михаил</h4>
+                                                <p class="text-p3">12 марта 2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="review_card__body">
+                                            <span class="text-p1">-</span>
+                                            <p class="text-p1">Локация супер! Недалеко от Москвы, и при этом тихо и спокойно</p>
+                                        </div>
+                                    </div>
+                                    <div class="review_card__foot">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="review_card">
+                                    <div class="review_card__content">
+                                        <div class="review_card__head">
+                                            <img src="./images/user_4.png" alt="" class="logo">
+                                            <div class="text">
+                                                <h4 class="text-p1">Инга</h4>
+                                                <p class="text-p3">12 марта 2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="review_card__body">
+                                            <span class="text-p1">Советую всем!</span>
+                                            <p class="text-p1">Если вы как и я впервые покупаете участок и не знаете с чего начать, тогда Любимая земля это хороший выбор!</p>
+                                        </div>
+                                    </div>
+                                    <div class="review_card__foot">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                        <img src="./images/star.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="review__bottom">
+                        <button class="swp_btn_prev">
+                            <img src="./images/swp_btn_prev.svg" alt="">
+                        </button>
+                        <div class="swiper_pagination"></div>
+                        <button class="swp_btn_next">
+                            <img src="./images/swp_btn_next.svg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="show_more">
+                        <a href="#" class="btn_brown text-btn modal_4_open">Оставить отзыв</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Review end -->
+
+            <!-- Atmosphere -->
+            <section class="atmosphere">
+                <div class="main_container">
+                    <h2 class="text-h1"><span>Атмосфера</span> на любимой земле</h2>
+                    <p class="text-p1">Любимую землю не покупают, ее создают!</p>
+
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/atmosphere_card_1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/atmosphere_card_1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/atmosphere_card_1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="atmosphere__bottom">
+                        <button class="swp_btn_prev">
+                            <img src="./images/swp_btn_prev.svg" alt="">
+                        </button>
+                        <div class="swiper_pagination"></div>
+                        <button class="swp_btn_next">
+                            <img src="./images/swp_btn_next.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Atmosphere end -->
+
+            <!-- News -->
+            <section class="news">
+                <div class="main_container">
+                    <h2 class="text-h1"><span>Свежие</span> Новости в мире <br> недвижимости</h2>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+
+                            <a href="#" class="swiper-slide news_card">
+                                <div class="news_card__img">
+                                    <img src=".//images/news_card_1.png" alt="">
+                                </div>
+                                <div class="news_card__head">
+                                    <span class="text-p3">9:43 12 марта 2024</span>
+                                    <span class="text-p3">121 просмотр</span>
+                                </div>
+                                <div class="news_card__body">
+                                    <h3 class="text-h2">Новые тренды: востребованные участки подмосковья в 2024 году</h3>
+                                    <p class="text-p1">В 2024 году рынок недвижимости Подмосковья продолжает демонстрировать высокий спрос на земельные участки. Особенно востребованными становятся участки с удобным расположением, хорошей транспортной доступностью и развитой инфраструктурой. Клиенты проявляют интерес к участкам, расположенным в экологически чистых районах с живописными природными пейзажами. Важным фактором также является близость к городу и наличие всех необходимых коммуникаций для комфортной жизни.</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide news_card">
+                                <div class="news_card__img">
+                                    <img src=".//images/news_card_2.png" alt="">
+                                </div>
+                                <div class="news_card__head">
+                                    <span class="text-p3">9:43 12 марта 2024</span>
+                                    <span class="text-p3">121 просмотр</span>
+                                </div>
+                                <div class="news_card__body">
+                                    <h3 class="text-h2">Новые тренды: востребованные участки подмосковья в 2024 году</h3>
+                                    <p class="text-p1">В 2024 году рынок недвижимости Подмосковья продолжает демонстрировать высокий спрос на земельные участки. Особенно востребованными становятся участки с удобным расположением, хорошей транспортной доступностью и развитой инфраструктурой. Клиенты проявляют интерес к участкам, расположенным в экологически чистых районах с живописными природными пейзажами. Важным фактором также является близость к городу и наличие всех необходимых коммуникаций для комфортной жизни.</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide news_card">
+                                <div class="news_card__img">
+                                    <img src=".//images/news_card_3.png" alt="">
+                                </div>
+                                <div class="news_card__head">
+                                    <span class="text-p3">9:43 12 марта 2024</span>
+                                    <span class="text-p3">121 просмотр</span>
+                                </div>
+                                <div class="news_card__body">
+                                    <h3 class="text-h2">Новые тренды: востребованные участки подмосковья в 2024 году</h3>
+                                    <p class="text-p1">В 2024 году рынок недвижимости Подмосковья продолжает демонстрировать высокий спрос на земельные участки. Особенно востребованными становятся участки с удобным расположением, хорошей транспортной доступностью и развитой инфраструктурой. Клиенты проявляют интерес к участкам, расположенным в экологически чистых районах с живописными природными пейзажами. Важным фактором также является близость к городу и наличие всех необходимых коммуникаций для комфортной жизни.</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide news_card">
+                                <div class="news_card__img">
+                                    <img src=".//images/news_card_2.png" alt="">
+                                </div>
+                                <div class="news_card__head">
+                                    <span class="text-p3">9:43 12 марта 2024</span>
+                                    <span class="text-p3">121 просмотр</span>
+                                </div>
+                                <div class="news_card__body">
+                                    <h3 class="text-h2">Новые тренды: востребованные участки подмосковья в 2024 году</h3>
+                                    <p class="text-p1">В 2024 году рынок недвижимости Подмосковья продолжает демонстрировать высокий спрос на земельные участки. Особенно востребованными становятся участки с удобным расположением, хорошей транспортной доступностью и развитой инфраструктурой. Клиенты проявляют интерес к участкам, расположенным в экологически чистых районах с живописными природными пейзажами. Важным фактором также является близость к городу и наличие всех необходимых коммуникаций для комфортной жизни.</p>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide news_card">
+                                <div class="news_card__img">
+                                    <img src=".//images/news_card_3.png" alt="">
+                                </div>
+                                <div class="news_card__head">
+                                    <span class="text-p3">9:43 12 марта 2024</span>
+                                    <span class="text-p3">121 просмотр</span>
+                                </div>
+                                <div class="news_card__body">
+                                    <h3 class="text-h2">Новые тренды: востребованные участки подмосковья в 2024 году</h3>
+                                    <p class="text-p1">В 2024 году рынок недвижимости Подмосковья продолжает демонстрировать высокий спрос на земельные участки. Особенно востребованными становятся участки с удобным расположением, хорошей транспортной доступностью и развитой инфраструктурой. Клиенты проявляют интерес к участкам, расположенным в экологически чистых районах с живописными природными пейзажами. Важным фактором также является близость к городу и наличие всех необходимых коммуникаций для комфортной жизни.</p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="news__bottom">
+                        <button class="swp_btn_prev">
+                            <img src="./images/swp_btn_prev.svg" alt="">
+                        </button>
+                        <div class="swiper_pagination"></div>
+                        <button class="swp_btn_next">
+                            <img src="./images/swp_btn_next.svg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="show_more">
+                        <a href="#" class="btn_brown text-btn">Ко всем новостям</a>
+                    </div>
+                </div>
+            </section>
+            <!-- News end -->
+
+            <!-- Write to us -->
+            <section class="write_us">
+                <div class="main_container write_us__container active">
+                    <h2 class="text-h1">Не нашли Участок? Напишите нам!</h2>
+                    <div class="write_us__content">
+                        <img src="./images/write_us__card_2.png" alt="" class="main_img active">
+                        <form action="" class="write_us__form">
+                            <p class="text-p1">Наши специалисты свяжутся с Вами и помогут выбрать участок по Всем вашим критериям!</p>
+                            <div class="form_group">
+                                <div class="form_group__item">
+                                    <label for="" class="text-p1">Ваше имя</label>
+                                    <input type="text" placeholder="Введите Ваше имя" class="inp">
+                                </div>
+                                <div class="form_group__item">
+                                    <label for="" class="text-p1">Номер телефона</label>
+                                    <input type="tel" placeholder="Введите номер телефона" class="inp">
+                                </div>
+                                <div class="form_group__item">
+                                    <label for="" class="text-p1">Опишите Ваши пожелания</label>
+                                    <textarea name="" class="inp" placeholder="Опишите, что ищите"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn_green text-btn modal_5_open">Отправить</button>
+                            <p class="text-p3">Вы даете согласие на обработку и хранение информации</p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- Write to us end -->
+
+            <!-- Main descriptions -->
+            <section class="main_descriptions">
+                <div class="main_container">
+                    <ul>
+                        <li>
+                            <p class="text-p1">Выбор участка под строительство загородного дома - это ответственный шаг, который может определить ваше будущее место жительства на долгие годы. При выборе участка необходимо учитывать ряд важных факторов: размер и форма участка, его географическое расположение, инфраструктуру и коммуникации в районе, а также особенности местности и рельефа. Важно также обратить внимание на правовой статус участка и наличие всех необходимых документов.</p>
+                            <p class="text-p1">Выбор участка под строительство загородного дома - это ответственный шаг, который может определить ваше будущее место жительства на долгие годы. При выборе участка необходимо учитывать ряд важных факторов: размер и форма участка, его географическое расположение, инфраструктуру и коммуникации в районе, а также особенности местности и рельефа. Важно также обратить внимание на правовой статус участка и наличие всех необходимых документов.</p>
+                        </li>
+                        <li>
+                            <p class="text-p1">Выбор участка под строительство загородного дома - это ответственный шаг, который может определить ваше будущее место жительства на долгие годы. При выборе участка необходимо учитывать ряд важных факторов: размер и форма участка, его географическое расположение, инфраструктуру и коммуникации в районе, а также особенности местности и рельефа. Важно также обратить внимание на правовой статус участка и наличие всех необходимых документов.</p>
+                            <p class="text-p1">Выбор участка под строительство загородного дома - это ответственный шаг, который может определить ваше будущее место жительства на долгие годы. При выборе участка необходимо учитывать ряд важных факторов: размер и форма участка, его географическое расположение, инфраструктуру и коммуникации в районе, а также особенности местности и рельефа. Важно также обратить внимание на правовой статус участка и наличие всех необходимых документов.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Main descriptions end -->
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="main_container footer__container">
+                <ul class="footer__navs">
+                    <li>
+                        <a href="#" class="text-p1">Поселки</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-p1">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-p1">Стать агентом</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-p1">О компании</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-p1">новости</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-p1">Контакты</a>
+                    </li>
+                </ul>
+                <a href="/" class="footer__logo">
+                    <img src="./images/header_log.svg" alt="">
+                    <span>Любимая <br>земля</span>
+                </a>
+                <ul class="footer__networks">
+                    <li>
+                        <span class="text-p1 title">Контакты:</span>
+                        <a href="#" class="text-p1">info@новоеивановское.рф</a>
+                        <a href="#" class="text-p1">+7(495) 555-55-55</a>
+                    </li>
+                    <li>
+                        <span class="text-p1 title">Режим работы:</span>
+                        <span class="text-p1">Пн-Пт 9:00-19:00</span>
+                        <span class="text-p1">Сб, Вс  12:00-18:00</span>
+                    </li>
+                    <li>
+                        <span class="text-p1 title">Адрес:</span>
+                        <span class="text-p1">Москва, ул </span>
+                        <span class="text-p1">Москва, ул </span>
+                    </li>
+                    <li>
+                        <span class="text-p1 title">ООО “Любимая земля”</span>
+                        <span class="text-p1">ИНН 96584849</span>
+                        <span class="text-p1">ОГРН: 1298382827</span>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+
+    <!-- Yandex map -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
+    <script src="./js/map.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

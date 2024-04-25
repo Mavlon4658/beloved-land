@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/header_log.svg" type="image/x-icon">
+    <title>Beloved Land</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- CSS file -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <!-- "Подобрать участок" modal -->
+        <div class="modal modal_1">
+            <div class="modal__bg"></div>
+            <form class="modal__content">
+                <div class="modal__head">
+                    <a href="/" class="logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+                    <button class="modal__close" type="button">
+                        <img src="./images/cross-icon.svg" alt="">
+                    </button>
+                </div>
+                <h2 class="text-h2 modal__title">Оставьте Ваши контакты и мы <br> обязательно свяжемся с Вами!</h2>
+                <div class="form_control">
+                    <label for="" class="text-p1">Ваше имя</label>
+                    <input type="text" class="inp" placeholder="Введите Ваше имя">
+                </div>
+                <div class="form_control">
+                    <label for="" class="text-p1">Номер телефона</label>
+                    <input type="text" class="inp" placeholder="Введите номер телефона">
+                </div>
+                <div class="form_control">
+                    <label for="" class="text-p1">Опишите Ваши пожелания</label>
+                    <textarea class="inp" placeholder="Опишите, что ищите"></textarea>
+                </div>
+                <button type="submit" class="btn_green">Отправить</button>
+            </form>
+        </div>
+        <!-- "Подобрать участок" modal end -->
+
+        <!-- "Стать агентом" modal -->
+        <div class="modal modal_2">
+            <div class="modal__bg"></div>
+            <form class="modal__content">
+                <div class="modal__head">
+                    <a href="/" class="logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+                    <button class="modal__close" type="button">
+                        <img src="./images/cross-icon.svg" alt="">
+                    </button>
+                </div>
+                <h2 class="text-h2 modal__title">Оставьте Ваши контакты и мы <br> обязательно свяжемся с Вами!</h2>
+                <div class="form_control">
+                    <label for="" class="text-p1">Ваше имя</label>
+                    <input type="text" class="inp" placeholder="Введите Ваше имя">
+                </div>
+                <div class="form_control">
+                    <label for="" class="text-p1">Номер телефона</label>
+                    <input type="text" class="inp" placeholder="Введите номер телефона">
+                </div>
+                <button type="submit" class="btn_green">Отправить</button>
+            </form>
+        </div>
+        <!-- "Стать агентом" modal end -->
+
+        <!-- "Войти в кабинет агента" modal -->
+        <div class="modal modal_3">
+            <div class="modal__bg"></div>
+            <form class="modal__content">
+                <div class="modal__head">
+                    <a href="/" class="logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+                    <button class="modal__close" type="button">
+                        <img src="./images/cross-icon.svg" alt="">
+                    </button>
+                </div>
+                <h2 class="text-h2 modal__title">Вход в кабинет агента</h2>
+                <div class="form_control">
+                    <label for="" class="text-p1">Логин</label>
+                    <input type="text" class="inp" placeholder="Введите логин">
+                </div>
+                <div class="form_control">
+                    <label for="" class="text-p1">Пароль</label>
+                    <div class="inp_wrap password_wrap">
+                        <input type="password" class="inp" placeholder="Введите пароль">
+                        <button type="button" class="change_type">
+                            <img src="./images/hide_eye.svg" alt="">
+                            <img src="./images/show_eye.svg" alt="">
+                        </button>
+                    </div>
+                    <a href="#">Забыли пароль?</a>
+                </div>
+                <button type="submit" class="btn_green">Отправить</button>
+            </form>
+        </div>
+        <!-- "Войти в кабинет агента" modal end -->
+
+        <!-- "Оставить отзыв" modal -->
+        <div class="modal modal_4">
+            <div class="modal__bg"></div>
+            <form class="modal__content">
+                <div class="modal__head">
+                    <a href="/" class="logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+                    <button class="modal__close" type="button">
+                        <img src="./images/cross-icon.svg" alt="">
+                    </button>
+                </div>
+                <h2 class="text-h2 modal__title">Оставьте Ваши впечатления!</h2>
+                <div class="form_control">
+                    <label for="" class="text-p1">Ваше имя</label>
+                    <input type="text" class="inp" placeholder="Введите Ваше имя">
+                </div>
+                <div class="form_control">
+                    <label for="" class="text-p1">Заголовок  (необязательно)</label>
+                    <input type="tel" class="inp" placeholder="Напишите заголовок">
+                </div>
+                <div class="form_control rate_wrap">
+                    <label for="" class="text-p1">Поставьте оценку</label>
+                    <input type="radio" name="rate" value="1">
+                    <input type="radio" name="rate" value="2">
+                    <input type="radio" name="rate" value="3">
+                    <input type="radio" name="rate" value="4">
+                    <input type="radio" name="rate" value="5">
+                    <div class="stars">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.9995 11.3123L14.9995 11.3123C14.3259 11.8213 14.0445 12.6984 14.2963 13.5043C14.2963 13.5043 14.2963 13.5043 14.2963 13.5044L15.9632 18.8401L11.7057 15.6232C10.9923 15.084 10.0078 15.084 9.29427 15.6232C9.29425 15.6232 9.29424 15.6232 9.29422 15.6232L5.03667 18.8402L6.7037 13.5043C6.95551 12.6985 6.67405 11.8212 6.00043 11.3123L1.59399 7.98269L1.59398 7.98269H6.95831C7.83313 7.98269 8.60643 7.41413 8.86731 6.5791L10.5 1.35327L12.1327 6.57902C12.1327 6.57905 12.1327 6.57908 12.1327 6.57911C12.3936 7.41422 13.167 7.98269 14.0417 7.98269H19.406L19.406 7.98269L14.9995 11.3123Z" stroke="#FFBA52" stroke-width="2"/>
+                        </svg>
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.9995 11.3123L14.9995 11.3123C14.3259 11.8213 14.0445 12.6984 14.2963 13.5043C14.2963 13.5043 14.2963 13.5043 14.2963 13.5044L15.9632 18.8401L11.7057 15.6232C10.9923 15.084 10.0078 15.084 9.29427 15.6232C9.29425 15.6232 9.29424 15.6232 9.29422 15.6232L5.03667 18.8402L6.7037 13.5043C6.95551 12.6985 6.67405 11.8212 6.00043 11.3123L1.59399 7.98269L1.59398 7.98269H6.95831C7.83313 7.98269 8.60643 7.41413 8.86731 6.5791L10.5 1.35327L12.1327 6.57902C12.1327 6.57905 12.1327 6.57908 12.1327 6.57911C12.3936 7.41422 13.167 7.98269 14.0417 7.98269H19.406L19.406 7.98269L14.9995 11.3123Z" stroke="#FFBA52" stroke-width="2"/>
+                        </svg>
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.9995 11.3123L14.9995 11.3123C14.3259 11.8213 14.0445 12.6984 14.2963 13.5043C14.2963 13.5043 14.2963 13.5043 14.2963 13.5044L15.9632 18.8401L11.7057 15.6232C10.9923 15.084 10.0078 15.084 9.29427 15.6232C9.29425 15.6232 9.29424 15.6232 9.29422 15.6232L5.03667 18.8402L6.7037 13.5043C6.95551 12.6985 6.67405 11.8212 6.00043 11.3123L1.59399 7.98269L1.59398 7.98269H6.95831C7.83313 7.98269 8.60643 7.41413 8.86731 6.5791L10.5 1.35327L12.1327 6.57902C12.1327 6.57905 12.1327 6.57908 12.1327 6.57911C12.3936 7.41422 13.167 7.98269 14.0417 7.98269H19.406L19.406 7.98269L14.9995 11.3123Z" stroke="#FFBA52" stroke-width="2"/>
+                        </svg>
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.9995 11.3123L14.9995 11.3123C14.3259 11.8213 14.0445 12.6984 14.2963 13.5043C14.2963 13.5043 14.2963 13.5043 14.2963 13.5044L15.9632 18.8401L11.7057 15.6232C10.9923 15.084 10.0078 15.084 9.29427 15.6232C9.29425 15.6232 9.29424 15.6232 9.29422 15.6232L5.03667 18.8402L6.7037 13.5043C6.95551 12.6985 6.67405 11.8212 6.00043 11.3123L1.59399 7.98269L1.59398 7.98269H6.95831C7.83313 7.98269 8.60643 7.41413 8.86731 6.5791L10.5 1.35327L12.1327 6.57902C12.1327 6.57905 12.1327 6.57908 12.1327 6.57911C12.3936 7.41422 13.167 7.98269 14.0417 7.98269H19.406L19.406 7.98269L14.9995 11.3123Z" stroke="#FFBA52" stroke-width="2"/>
+                        </svg>
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.9995 11.3123L14.9995 11.3123C14.3259 11.8213 14.0445 12.6984 14.2963 13.5043C14.2963 13.5043 14.2963 13.5043 14.2963 13.5044L15.9632 18.8401L11.7057 15.6232C10.9923 15.084 10.0078 15.084 9.29427 15.6232C9.29425 15.6232 9.29424 15.6232 9.29422 15.6232L5.03667 18.8402L6.7037 13.5043C6.95551 12.6985 6.67405 11.8212 6.00043 11.3123L1.59399 7.98269L1.59398 7.98269H6.95831C7.83313 7.98269 8.60643 7.41413 8.86731 6.5791L10.5 1.35327L12.1327 6.57902C12.1327 6.57905 12.1327 6.57908 12.1327 6.57911C12.3936 7.41422 13.167 7.98269 14.0417 7.98269H19.406L19.406 7.98269L14.9995 11.3123Z" stroke="#FFBA52" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form_control">
+                    <label for="" class="text-p1">Отзыв</label>
+                    <textarea class="inp" placeholder="Оставьте Ваш отзыв"></textarea>
+                </div>
+                <button type="submit" class="btn_green">Отправить</button>
+            </form>
+        </div>
+        <!-- "Оставить отзыв" modal end -->
+
+        <!-- "Thanks" modal -->
+        <div class="modal modal_5">
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+                <div class="modal__head">
+                    <a href="/" class="logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+                    <button class="modal__close" type="button">
+                        <img src="./images/cross-icon.svg" alt="">
+                    </button>
+                </div>
+                <h2 class="text-h2 modal__title">Спасибо, в ближайшее время с Вами свяжется наш специалист!</h2>
+            </div>
+        </div>
+        <!-- "Thanks" modal end -->
+
+        <!-- Write -->
+        <div class="write">
+            <span>Пишите:</span>
+            <a href="#">
+                <img src="./images/telegram.svg" alt="">
+            </a>
+            <a href="#">
+                <img src="./images/whatsapp.svg" alt="">
+            </a>
+        </div>
+        <!-- Write end -->
+
+        <!-- Header -->
+        <header class="header">
+            <div class="main_container header__container">
+                <div class="header__left">
+                    <button class="bars">
+                        <img src="./images/bars.svg" alt="">
+                    </button>
+
+                    <a href="#" class="header__logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+
+                    <div class="header__left_in">
+                        <div class="search">
+                            <img src="./images/search.svg" alt="" class="icon">
+                            <input type="text" placeholder="Поиск">
+                        </div>
+
+                        <ul class="header__navs">
+                            <li>
+                                <a href="#">Поселки</a>
+                            </li>
+                            <li>
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="#">О компании</a>
+                            </li>
+                            <li>
+                                <a href="#">Hовости</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__contact">
+                    <div class="links">
+                        <a href="mailto:info@любимаяземля.рф">info@любимаяземля.рф</a>
+                        <a href="tel:+7(495) 555-55-55">+7(495) 555-55-55</a>
+                    </div>
+                    <button class="search_btn">
+                        <img src="./images/search.svg" alt="">
+                    </button>
+                    <a href="#" class="icon">
+                        <img src="./images/phone.svg" alt="">
+                    </a>
+                </div>
+                <div class="header__right">
+                    <a href="#" class="btn_green modal_2_open">Стать агентом</a>
+                    <a href="#" class="auth_link modal_3_open">Войти в кабинет агента</a>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Mobile menu -->
+        <div class="mobile_menu">
+            <div class="main_container mobile_menu__container">
+                <div class="mobile_menu__head">
+                    <a href="/" class="logo">
+                        <img src="./images/header_log.svg" alt="">
+                        <span>Любимая <br> земля</span>
+                    </a>
+                    <button class="mobile_menu__close">
+                        <img src="./images/menu_close.svg" alt="">
+                    </button>
+                </div>
+                <div class="mobile_menu__content">
+                    <ul class="mobile_menu__navs">
+                        <li>
+                            <a href="#" class="text-p1">Поселки</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-p1">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-p1">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-p1">Hовости</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-p1">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="mobile_menu__bottom">
+                        <a href="#" class="btn_green text-btn modal_2_open">Стать агентом</a>
+                        <a href="#" class="auth_link modal_3_open">Войти в кабинет агента</a>
+                    </div>
+                    <ul class="mobile_menu__networks">
+                        <li>
+                            <a href="#">
+                                <img src="./images/menu_phone.svg" alt="">
+                                <span class="text-p1"> 8 (495) 212-18-86</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/menu_mail.svg" alt="">
+                                <span class="text-p1">info@любимаяземля.рф</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/menu_clock.svg" alt="">
+                                <span class="text-p1">Работаем: 09:00 - 20:00</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu end -->
+
+        <main>
+
+            <!-- Breadcrumbs -->
+            <div class="breakcrumbs">
+                <ul class="main_container">
+                    <li>
+                        <a href="/" class="text-p3">Любимая земля</a>
+                    </li>
+                    <li>
+                        <span class="text-p3">/</span>
+                    </li>
+                    <li>
+                        <span class="text-p3 current-page">Отзывы</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Breadcrumbs end -->
+
+            <!-- Review -->
+            <section class="review review_page">
+                <div class="main_container">
+                    <h2 class="text-h1">Отзывы</h2>
+                    <p class="text-p1 review__description">Мы гордимся положительными отзывами и благодарны нашим клиентам за доверие. Посмотрите отзывы и убедитесь сами в надёжности и профессионализме нашей компании. Вы также можете поделиться своим опытом и оставить свой отзыв о работе с нами. Компания «Любимая земля» - ваш надёжный партнёр в выборе и покупке участков под Москвой.</p>
+
+                    <div class="review_card__wrap">
+
+                        <div class="review_card">
+                            <div class="review_card__content">
+                                <div class="review_card__head">
+                                    <img src="./images/user_1.png" alt="" class="logo">
+                                    <div class="text">
+                                        <h4 class="text-p1">Алина А</h4>
+                                        <p class="text-p3">12 марта 2024</p>
+                                    </div>
+                                </div>
+                                <div class="review_card__body">
+                                    <span class="text-p1">Супер!</span>
+                                    <p class="text-p1">Живем уже год на своем любимом участке! Очень нравится расположение!</p>
+                                </div>
+                            </div>
+                            <div class="review_card__foot">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="review_card">
+                            <div class="review_card__content">
+                                <div class="review_card__head">
+                                    <img src="./images/user_2.png" alt="" class="logo">
+                                    <div class="text">
+                                        <h4 class="text-p1">Виктор </h4>
+                                        <p class="text-p3">12 марта 2024</p>
+                                    </div>
+                                </div>
+                                <div class="review_card__body">
+                                    <span class="text-p1">Отлично!</span>
+                                    <p class="text-p1">Очень понравился подход к клиенту, все сделали быстро</p>
+                                </div>
+                            </div>
+                            <div class="review_card__foot">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="review_card">
+                            <div class="review_card__content">
+                                <div class="review_card__head">
+                                    <img src="./images/user_3.png" alt="" class="logo">
+                                    <div class="text">
+                                        <h4 class="text-p1">Михаил</h4>
+                                        <p class="text-p3">12 марта 2024</p>
+                                    </div>
+                                </div>
+                                <div class="review_card__body">
+                                    <span class="text-p1">-</span>
+                                    <p class="text-p1">Локация супер! Недалеко от Москвы, и при этом тихо и спокойно</p>
+                                </div>
+                            </div>
+                            <div class="review_card__foot">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="review_card">
+                            <div class="review_card__content">
+                                <div class="review_card__head">
+                                    <img src="./images/user_4.png" alt="" class="logo">
+                                    <div class="text">
+                                        <h4 class="text-p1">Инга</h4>
+                                        <p class="text-p3">12 марта 2024</p>
+                                    </div>
+                                </div>
+                                <div class="review_card__body">
+                                    <span class="text-p1">Советую всем!</span>
+                                    <p class="text-p1">Если вы как и я впервые покупаете участок и не знаете с чего начать, тогда Любимая земля это хороший выбор!</p>
+                                </div>
+                            </div>
+                            <div class="review_card__foot">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="review_card">
+                            <div class="review_card__content">
+                                <div class="review_card__head">
+                                    <img src="./images/user_1.png" alt="" class="logo">
+                                    <div class="text">
+                                        <h4 class="text-p1">Алина А</h4>
+                                        <p class="text-p3">12 марта 2024</p>
+                                    </div>
+                                </div>
+                                <div class="review_card__body">
+                                    <span class="text-p1">Супер!</span>
+                                    <p class="text-p1">Живем уже год на своем любимом участке! Очень нравится расположение!</p>
+                                </div>
+                            </div>
+                            <div class="review_card__foot">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="review_card">
+                            <div class="review_card__content">
+                                <div class="review_card__head">
+                                    <img src="./images/user_2.png" alt="" class="logo">
+                                    <div class="text">
+                                        <h4 class="text-p1">Виктор </h4>
+                                        <p class="text-p3">12 марта 2024</p>
+                                    </div>
+                                </div>
+                                <div class="review_card__body">
+                                    <span class="text-p1">Отлично!</span>
+                                    <p class="text-p1">Очень понравился подход к клиенту, все сделали быстро</p>
+                                </div>
+                            </div>
+                            <div class="review_card__foot">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="review_card">
+                            <div class="review_card__content">
+                                <div class="review_card__head">
+                                    <img src="./images/user_3.png" alt="" class="logo">
+                                    <div class="text">
+                                        <h4 class="text-p1">Михаил</h4>
+                                        <p class="text-p3">12 марта 2024</p>
+                                    </div>
+                                </div>
+                                <div class="review_card__body">
+                                    <span class="text-p1">-</span>
+                                    <p class="text-p1">Локация супер! Недалеко от Москвы, и при этом тихо и спокойно</p>
+                                </div>
+                            </div>
+                            <div class="review_card__foot">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="review_card">
+                            <div class="review_card__content">
+                                <div class="review_card__head">
+                                    <img src="./images/user_4.png" alt="" class="logo">
+                                    <div class="text">
+                                        <h4 class="text-p1">Инга</h4>
+                                        <p class="text-p3">12 марта 2024</p>
+                                    </div>
+                                </div>
+                                <div class="review_card__body">
+                                    <span class="text-p1">Советую всем!</span>
+                                    <p class="text-p1">Если вы как и я впервые покупаете участок и не знаете с чего начать, тогда Любимая земля это хороший выбор!</p>
+                                </div>
+                            </div>
+                            <div class="review_card__foot">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="review_card">
+                            <div class="review_card__content">
+                                <div class="review_card__head">
+                                    <img src="./images/user_1.png" alt="" class="logo">
+                                    <div class="text">
+                                        <h4 class="text-p1">Алина А</h4>
+                                        <p class="text-p3">12 марта 2024</p>
+                                    </div>
+                                </div>
+                                <div class="review_card__body">
+                                    <span class="text-p1">Супер!</span>
+                                    <p class="text-p1">Живем уже год на своем любимом участке! Очень нравится расположение!</p>
+                                </div>
+                            </div>
+                            <div class="review_card__foot">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="review_card">
+                            <div class="review_card__content">
+                                <div class="review_card__head">
+                                    <img src="./images/user_2.png" alt="" class="logo">
+                                    <div class="text">
+                                        <h4 class="text-p1">Виктор </h4>
+                                        <p class="text-p3">12 марта 2024</p>
+                                    </div>
+                                </div>
+                                <div class="review_card__body">
+                                    <span class="text-p1">Отлично!</span>
+                                    <p class="text-p1">Очень понравился подход к клиенту, все сделали быстро</p>
+                                </div>
+                            </div>
+                            <div class="review_card__foot">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="review_card">
+                            <div class="review_card__content">
+                                <div class="review_card__head">
+                                    <img src="./images/user_3.png" alt="" class="logo">
+                                    <div class="text">
+                                        <h4 class="text-p1">Михаил</h4>
+                                        <p class="text-p3">12 марта 2024</p>
+                                    </div>
+                                </div>
+                                <div class="review_card__body">
+                                    <span class="text-p1">-</span>
+                                    <p class="text-p1">Локация супер! Недалеко от Москвы, и при этом тихо и спокойно</p>
+                                </div>
+                            </div>
+                            <div class="review_card__foot">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="review_card">
+                            <div class="review_card__content">
+                                <div class="review_card__head">
+                                    <img src="./images/user_4.png" alt="" class="logo">
+                                    <div class="text">
+                                        <h4 class="text-p1">Инга</h4>
+                                        <p class="text-p3">12 марта 2024</p>
+                                    </div>
+                                </div>
+                                <div class="review_card__body">
+                                    <span class="text-p1">Советую всем!</span>
+                                    <p class="text-p1">Если вы как и я впервые покупаете участок и не знаете с чего начать, тогда Любимая земля это хороший выбор!</p>
+                                </div>
+                            </div>
+                            <div class="review_card__foot">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                                <img src="./images/star.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="text-p1 disabled">
+                            <span>Предыдущая</span>
+                            <img src="./images/pagenation_btn_left.svg" alt="">
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="#" class="active text-p1">1</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-p1">2</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-p1">3</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-p1">4</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-p1">5</a>
+                            </li>
+                            <li class="dots">
+                                <span class="text-p1">...</span>
+                            </li>
+                            <li>
+                                <a href="#" class="text-p1">6</a>
+                            </li>
+                        </ul>
+                        <button class="text-p1">
+                            <span>Следующая</span>
+                            <img src="./images/pagenation_btn_right.svg" alt="">
+                        </button>
+                    </div>
+                    <!-- Pagination end -->
+
+                    <div class="show_more">
+                        <a href="#" class="btn_brown text-btn modal_4_open">Оставить отзыв</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Review end -->
+
+            <!-- Write to us -->
+            <section class="write_us">
+                <div class="main_container write_us__container active">
+                    <h2 class="text-h1">Не нашли Участок? Напишите нам!</h2>
+                    <div class="write_us__content">
+                        <img src="./images/write_us__card_2.png" alt="" class="main_img active">
+                        <form action="" class="write_us__form">
+                            <p class="text-p1">Наши специалисты свяжутся с Вами и помогут выбрать участок по Всем вашим критериям!</p>
+                            <div class="form_group">
+                                <div class="form_group__item">
+                                    <label for="" class="text-p1">Ваше имя</label>
+                                    <input type="text" placeholder="Введите Ваше имя" class="inp">
+                                </div>
+                                <div class="form_group__item">
+                                    <label for="" class="text-p1">Номер телефона</label>
+                                    <input type="tel" placeholder="Введите номер телефона" class="inp">
+                                </div>
+                                <div class="form_group__item">
+                                    <label for="" class="text-p1">Опишите Ваши пожелания</label>
+                                    <textarea name="" class="inp" placeholder="Опишите, что ищите"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn_green text-btn modal_5_open">Отправить</button>
+                            <p class="text-p3">Вы даете согласие на обработку и хранение информации</p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- Write to us end -->
+
+            <!-- Main descriptions -->
+            <section class="main_descriptions">
+                <div class="main_container">
+                    <ul>
+                        <li>
+                            <p class="text-p1">Выбор участка под строительство загородного дома - это ответственный шаг, который может определить ваше будущее место жительства на долгие годы. При выборе участка необходимо учитывать ряд важных факторов: размер и форма участка, его географическое расположение, инфраструктуру и коммуникации в районе, а также особенности местности и рельефа. Важно также обратить внимание на правовой статус участка и наличие всех необходимых документов.</p>
+                            <p class="text-p1">Выбор участка под строительство загородного дома - это ответственный шаг, который может определить ваше будущее место жительства на долгие годы. При выборе участка необходимо учитывать ряд важных факторов: размер и форма участка, его географическое расположение, инфраструктуру и коммуникации в районе, а также особенности местности и рельефа. Важно также обратить внимание на правовой статус участка и наличие всех необходимых документов.</p>
+                        </li>
+                        <li>
+                            <p class="text-p1">Выбор участка под строительство загородного дома - это ответственный шаг, который может определить ваше будущее место жительства на долгие годы. При выборе участка необходимо учитывать ряд важных факторов: размер и форма участка, его географическое расположение, инфраструктуру и коммуникации в районе, а также особенности местности и рельефа. Важно также обратить внимание на правовой статус участка и наличие всех необходимых документов.</p>
+                            <p class="text-p1">Выбор участка под строительство загородного дома - это ответственный шаг, который может определить ваше будущее место жительства на долгие годы. При выборе участка необходимо учитывать ряд важных факторов: размер и форма участка, его географическое расположение, инфраструктуру и коммуникации в районе, а также особенности местности и рельефа. Важно также обратить внимание на правовой статус участка и наличие всех необходимых документов.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Main descriptions end -->
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="main_container footer__container">
+                <ul class="footer__navs">
+                    <li>
+                        <a href="#" class="text-p1">Поселки</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-p1">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-p1">Стать агентом</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-p1">О компании</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-p1">новости</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-p1">Контакты</a>
+                    </li>
+                </ul>
+                <a href="/" class="footer__logo">
+                    <img src="./images/header_log.svg" alt="">
+                    <span>Любимая <br>земля</span>
+                </a>
+                <ul class="footer__networks">
+                    <li>
+                        <span class="text-p1 title">Контакты:</span>
+                        <a href="#" class="text-p1">info@новоеивановское.рф</a>
+                        <a href="#" class="text-p1">+7(495) 555-55-55</a>
+                    </li>
+                    <li>
+                        <span class="text-p1 title">Режим работы:</span>
+                        <span class="text-p1">Пн-Пт 9:00-19:00</span>
+                        <span class="text-p1">Сб, Вс  12:00-18:00</span>
+                    </li>
+                    <li>
+                        <span class="text-p1 title">Адрес:</span>
+                        <span class="text-p1">Москва, ул </span>
+                        <span class="text-p1">Москва, ул </span>
+                    </li>
+                    <li>
+                        <span class="text-p1 title">ООО “Любимая земля”</span>
+                        <span class="text-p1">ИНН 96584849</span>
+                        <span class="text-p1">ОГРН: 1298382827</span>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+
+    <!-- Yandex map -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
+    <script src="./js/map.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
