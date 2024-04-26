@@ -1589,108 +1589,96 @@ section {
                 border-radius: 10px;
             }
         }
+    }
 
-        &__card {
-            position: absolute;
-            top: 48px;
-            right: 258px;
-            box-shadow: 0px 4px 30px 0px rgba(181, 163, 146, 0.3);
-            border-radius: 20px;
+    [class*="balloon_layout_normal"] {
+        border-radius: 20px;
+        left: 0 !important;
+        top: 50% !important;
+        transform: translateY(-50%);
 
-            @include media (1700) {
-                right: 150px;
-            }
+    }
+    [class*="balloon"] {
+        @include media(700) {
+            display: none !important;
+        }
+    }
 
-            @include media (1550) {
-                right: 50px;
-            }
+    [class*="balloon__tail"] {
+        position: absolute;
+        left: -8px;
+        top: 50%;
+        transform: rotate(-45deg);
+    }
 
-            @include media (1400) {
-                right: 20px;
-            }
+    [class*="balloon__close-button"] {
+        margin-top: 36px;
+        margin-right: 36px;
+    }
 
-            @include media(1300) {
-                display: none;
-            }
+    [class*="balloon__layout"] {
+        border-radius: 20px;
+        width: 480px;
+    }
 
-            &_icon {
-                position: absolute;
-                left: 0;
-                top: 50%;
-                z-index: 2;
-                transform: translate(-100%, -50%);
-            }
+    [class*="balloon__content"] {
+        padding: 30px;
+        margin: 0;
 
-            &_content {
-                background: $color-white-bg;
-                padding: 30px;
-                width: 480px;
-                border-radius: 20px;
-                position: relative;
+        [id*="id"] {
+            width: auto !important;
+            height: auto !important;
+            overflow: visible !important;
+        }
+    }
 
-                .card {
-                    &_head {
-                        display: flex;
-                        align-items: flex-start;
-                        justify-content: space-between;
-
-                        &__text {
-                            display: flex;
-                            flex-direction: column;
-                            gap: 8px;
-                        }
-                    }
-                }
-            }
+    .card {
+        &_head {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
         }
 
-        .swiper {
+        &_body {
             margin: 20px 0;
-            width: 100%;
-            border-radius: 16px;
 
-            &-slide {
-                img {
-                    width: 100%;
+            .swiper {
+                &-slide {
                     height: 200px;
-                    object-fit: cover;
-                }
-            }
-
-            &_btn {
-                button {
-                    position: absolute;
-                    top: 50%;
-                    transform:  translateY(-50%);
-                    z-index: 2;
-                }
-
-                &_prev {
-                    left: 12px;
-                }
-
-                &_next {
-                    right: 12px;
-                }
-            }
-
-            &_pagination {
-                position: absolute;
-                bottom: 10px;
-                left: 0;
-                width: 100%;
-
-                span {
-                    background: $color-bg-2;
-
-                    &.swiper-pagination-bullet-active {
-                        background: $color-btn-action;
+                    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 16px;
                     }
+                }
+
+                &_btn {
+                    button {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        z-index: 2;
+                    }
+
+                    &_prev {
+                        left: 12px;
+                    }
+
+                    &_next {
+                        right: 12px;
+                    }
+                }
+
+                &_pagination {
+                    position: absolute;
+                    bottom: 10px;
                 }
             }
         }
 
-        .btn_brown {
+        &_foot {
             width: 100%;
             text-align: center;
         }

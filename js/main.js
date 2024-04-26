@@ -29,18 +29,30 @@ if (exclLocSwipers.length) {
     })
 }
 
-let areaMapSwp = new Swiper('.area_map .card_body', {
-    slidesPerView: 1,
-    loop: true,
-    navigation: {
-        nextEl: ".area_map .card_body .swiper_btn_next",
-        prevEl: ".area_map .card_body .swiper_btn_prev"
-    },
-    pagination: {
-        el: ".area_map .card_body .swiper_pagination",
-        clickable: true,
-    }
-})
+if (document.querySelector('.area_map .with_slider')) {
+    let swpEl = null;
+    let clsInterval;
+    
+    clsInterval = setInterval(() => {
+        swpEl = document.querySelector('.area_map .swiper');
+        if (swpEl != null) {
+            clearInterval(clsInterval);
+            let areaMapSwp = new Swiper('.area_map .swiper', {
+                slidesPerView: 1,
+                loop: true,
+                navigation: {
+                    nextEl: ".area_map .card_body .swiper_btn_next",
+                    prevEl: ".area_map .card_body .swiper_btn_prev"
+                },
+                pagination: {
+                    el: ".area_map .card_body .swiper_pagination",
+                    clickable: true,
+                }
+            })
+        }
+    }, 100);
+
+}
 
 let reviewSwiper = new Swiper('.review .swiper', {
     slidesPerView: 1,
