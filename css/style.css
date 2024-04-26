@@ -3194,4 +3194,84 @@ section {
   .contact__map {
     height: 348px;
   }
+}
+
+.error_page {
+  padding-top: 200px;
+  text-align: center;
+}
+@media screen and (max-width: 1300px) {
+  .error_page {
+    padding-top: 140px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .error_page {
+    padding-top: 112px;
+  }
+}
+.error_page h1 {
+  background: url("../images/error_page_bg.png") center/cover no-repeat;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-size: 400px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+@media screen and (max-width: 1300px) {
+  .error_page h1 {
+    font-size: 360px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .error_page h1 {
+    font-size: 160px;
+    height: 160px;
+  }
+}
+.error_page h1 span {
+  margin-top: -100px;
+}
+@media screen and (max-width: 700px) {
+  .error_page h1 span {
+    margin-top: -50px;
+  }
+}
+.error_page h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+}
+@media screen and (max-width: 700px) {
+  .error_page h3 {
+    font-size: 16px;
+  }
+}
+.error_page h2 {
+  margin: 30px 0;
+}
+.error_page .links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+}
+@media screen and (max-width: 700px) {
+  .error_page .links .btn_brown {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.error_page .links .text_p1 {
+  color: #783807;
+  text-decoration: underline;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */

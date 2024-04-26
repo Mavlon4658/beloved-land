@@ -3446,3 +3446,85 @@ section {
     }
 }
 // Contact end
+
+// Error page
+.error_page {
+    padding-top: 200px;
+    text-align: center;
+
+    @include media(1300) {
+        padding-top: 140px;
+    }
+
+    @include media(700) {
+        padding-top: 112px;
+    }
+
+    h1 {
+        background: url('../images/error_page_bg.png') center/cover no-repeat;
+        color: transparent;
+        background-clip: text;
+        font-size: 400px;
+        font-family: $font-raleway;
+        font-weight: 900;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+
+        @include media(1300) {
+            font-size: 360px;
+        }
+
+        @include media(700) {
+            font-size: 160px;
+            height: 160px;
+        }
+        
+        span {
+            margin-top: -100px;
+
+            @include media(700) {
+                margin-top: -50px;
+            }
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 140%;
+
+        @include media(700) {
+            font-size: 16px;
+        }
+    }
+
+    h2 {
+        margin: 30px 0;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 26px;
+        
+        .btn_brown {
+            @include media(700) {
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .text_p1 {
+            color: $color-btn;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+    }
+}
+// Error page end
