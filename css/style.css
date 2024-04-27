@@ -494,6 +494,38 @@ section {
 .header__left .search input::placeholder {
   color: #17303E;
 }
+.header__left .search_result {
+  position: absolute;
+  width: 100%;
+  background: white;
+  padding: 20px 16px;
+  border-radius: 8px;
+  border: 1px solid #F3ECE1;
+  margin-top: 5px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+.header__left .search_result.active {
+  display: block;
+}
+.header__left .search_result ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 13px;
+}
+.header__left .search_result ul li {
+  padding: 8px 0;
+}
+.header__left .search_result ul a span {
+  display: inline;
+  background: #6D9200;
+  color: #FFF;
+}
+.header__left .search_result_link {
+  color: #783807;
+  border-bottom: 1px solid #783807;
+  padding-top: 5px;
+}
 .header__navs {
   display: flex;
   align-items: center;
@@ -3243,10 +3275,12 @@ section {
     margin-top: -50px;
   }
 }
-.error_page h3 {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 140%;
+@media screen and (max-width: 1300px) {
+  .error_page h3 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+  }
 }
 @media screen and (max-width: 700px) {
   .error_page h3 {
@@ -3274,4 +3308,67 @@ section {
   color: #783807;
   text-decoration: underline;
   text-transform: uppercase;
+}
+
+.search_page .text-red {
+  color: #AF0542;
+  margin-top: 30px;
+  margin-bottom: -60px;
+}
+@media screen and (max-width: 992px) {
+  .search_page .text-red {
+    margin-bottom: -20px;
+  }
+}
+.search_page__inp {
+  position: relative;
+  z-index: 1;
+  background: #F3ECE1;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 40px 0;
+}
+.search_page__inp img {
+  position: absolute;
+  z-index: -1;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.search_page__inp input {
+  height: 58px;
+  width: 100%;
+  padding: 0 15px 0 56px;
+  color: #17303E;
+}
+@media screen and (max-width: 700px) {
+  .search_page__inp input {
+    height: 48px;
+    font-size: 20px;
+  }
+}
+.search_page__inp input::-moz-placeholder {
+  color: #17303E;
+}
+.search_page__inp input::placeholder {
+  color: #17303E;
+}
+.search_page__result_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.search_page__result ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+.search_page__result ul a {
+  color: #783807;
+  border-bottom: 1px solid #783807;
+}
+.search_page__result ul a span {
+  display: inline;
+  background: #F3ECE1;
 }/*# sourceMappingURL=style.css.map */

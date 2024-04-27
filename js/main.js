@@ -279,3 +279,21 @@ let peopleSwiper = new Swiper('.people .swiper', {
         clickable: true,
     }
 })
+
+let headerSearchInp = document.querySelector('.header .search input'),
+    headerSearchRes = document.querySelector('.header .search_result');
+
+headerSearchInp.onfocus = () => {
+    headerSearchRes.classList.add('active');
+}
+
+document.addEventListener('click', event => {
+    if (headerSearchInp) {
+        const t1 = event.composedPath().includes(headerSearchInp)
+        const t2 = event.composedPath().includes(headerSearchRes)
+    
+        if (!t1 && !t2) {
+            headerSearchRes.classList.remove('active');
+        }
+    }
+})
